@@ -4214,7 +4214,7 @@ void cmdSelectFromCursorToEndOfProject(Command* cmd) {
 	Main_OnCommand(40625, 0); // Time selection: Set start point
 	Main_OnCommand(40043, 0); // Transport: Go to end of project
 	Main_OnCommand(40626, 0); // Time selection: Set end point
-	outputMessage(translate("selected to ebd of project"));
+	outputMessage(translate("selected to end of project"));
 }
 
 #define DEFACCEL {0, 0, 0}
