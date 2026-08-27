@@ -787,6 +787,14 @@ bool shouldReportTimeMovement() {
 	return !(GetPlayState() & 1);
 }
 
+bool shouldReportMarkers() {
+	if (settings::reportMarkersWhilePlaying) {
+		return true;
+	}
+	// Don't report if playing.
+	return !(GetPlayState() & 1);
+}
+
 INT_PTR CALLBACK reviewMessage_dialogProc(HWND dialog, UINT msg, WPARAM wParam,
 	LPARAM lParam
 ) {
@@ -4758,7 +4766,7 @@ void cmdAddOrRemoveStretch(int command) {
 		// playing if the user wants markers reported. Removal isn't gated this
 		// way because it requires navigating to the marker first, so it's far
 		// less likely to occur repeatedly during playback.
-		if (settings::reportMarkersWhilePlaying || !(GetPlayState() & 1)) {
+		if (shouldReportMarkers()) {
 			// Translators: Reported when one or more stretch markers are added. {} will be replaced by the number of stretch markers, EG "2 stretch markers added".
 			outputMessage(format(
 				translate_plural("{} stretch marker added", "{} stretch markers added", difference),
@@ -5759,7 +5767,7 @@ void cmdAbout(int command) {
 }
 
 void cmdInsertMarker(int command) {
-	if (!shouldReportTimeMovement()) {
+	if (!shouldReportMarkers()) {
 		Main_OnCommand(command, 0);
 		return;
 	}
@@ -5781,7 +5789,7 @@ void cmdInsertMarker(int command) {
 }
 
 void cmdInsertRegion(int command) {
-	if (!shouldReportTimeMovement()) {
+	if (!shouldReportMarkers()) {
 		Main_OnCommand(command, 0);
 		return;
 	}
