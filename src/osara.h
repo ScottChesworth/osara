@@ -18,9 +18,15 @@
 # pragma clang diagnostic pop
 #endif
 #include <functional>
+#include <fstream>
 #include <memory>
 #include <string>
 #include <sstream>
+#include <utility>
+#ifndef FMT_HEADER_ONLY
+#define FMT_HEADER_ONLY
+#endif
+#include <fmt/format.h>
 
 #define REAPERAPI_MINIMAL
 #define REAPERAPI_WANT_GetLastTouchedTrack
@@ -50,6 +56,7 @@
 #define REAPERAPI_WANT_GetMasterTrack
 #define REAPERAPI_WANT_Track_GetPeakInfo
 #define REAPERAPI_WANT_GetHZoomLevel
+#define REAPERAPI_WANT_adjustZoom
 #define REAPERAPI_WANT_GetToggleCommandState
 #define REAPERAPI_WANT_Main_OnCommand
 #define REAPERAPI_WANT_Undo_CanUndo2
@@ -98,6 +105,7 @@
 #define REAPERAPI_WANT_SetTakeStretchMarker
 #define REAPERAPI_WANT_ValidatePtr
 #define REAPERAPI_WANT_DeleteTempoTimeSigMarker
+#define REAPERAPI_WANT_GetProjectLength
 #define REAPERAPI_WANT_MIDIEditor_GetActive
 #define REAPERAPI_WANT_MIDIEditor_GetTake
 #define REAPERAPI_WANT_MIDIEditor_GetSetting_str
@@ -120,6 +128,9 @@
 #define REAPERAPI_WANT_TakeFX_SetParam
 #define REAPERAPI_WANT_TakeFX_FormatParamValue
 #define REAPERAPI_WANT_plugin_getapi
+#define REAPERAPI_WANT_PreventUIRefresh
+#define REAPERAPI_WANT_UpdateArrange
+#define REAPERAPI_WANT_Undo_OnStateChangeEx2
 #define REAPERAPI_WANT_Envelope_FormatValue
 #define REAPERAPI_WANT_CountTrackEnvelopes
 #define REAPERAPI_WANT_GetTrackEnvelope
@@ -193,6 +204,7 @@
 #define REAPERAPI_WANT_TrackFX_Delete
 #define REAPERAPI_WANT_GetSetTrackGroupMembership
 #define REAPERAPI_WANT_GetSetTrackGroupMembershipHigh
+#define REAPERAPI_WANT_GetSetProjectInfo
 #define REAPERAPI_WANT_GetSetProjectInfo_String
 #define REAPERAPI_WANT_SetOnlyTrackSelected
 #define REAPERAPI_WANT_MIDI_GetEvt
@@ -220,7 +232,7 @@
 #define REAPERAPI_WANT_parse_timestr_len
 #define REAPERAPI_WANT_TimeMap_GetTimeSigAtTime
 #define REAPERAPI_WANT_GetSetProjectGrid
-
+#define REAPERAPI_WANT_GetTrackMIDINoteNameEx
 #include <reaper/reaper_plugin.h>
 #include <reaper/reaper_plugin_functions.h>
 
@@ -238,7 +250,7 @@ typedef struct Command {
 	int section;
 	gaccel_register_t gaccel;
 	const char* id;
-	void (*execute)(Command*);
+	void (*execute)(int);
 } Command;
 extern int lastCommandRepeatCount;
 extern DWORD lastCommandTime;
@@ -313,10 +325,12 @@ typedef enum {
 	TF_MEASURE,
 	TF_MINSEC,
 	TF_SEC,
+	TF_ROUNDSEC,
 	TF_FRAME,
 	TF_HMSF,
 	TF_SAMPLE,
-	TF_MEASURETICK
+	TF_MEASURETICK,
+	TF_MS
 } TimeFormat;
 const TimeFormat TF_RULER = TF_NONE;
 enum FormatTimeCacheRequest {
@@ -333,28 +347,29 @@ std::string formatLength(double start, double end, TimeFormat format=TF_RULER,
 std::string formatNoteLength(double start, double end);
 std::string formatCursorPosition(TimeFormat format=TF_RULER,
 	FormatTimeCacheRequest cache=FT_CACHE_DEFAULT);
+std::string formatTrackNameOrNumber(MediaTrack* track);
 const char* getActionName(int command, KbdSectionInfo* section=nullptr, bool skipCategory=true);
 
 bool isTrackSelected(MediaTrack* track);
 bool isTrackArmed(MediaTrack* track);
-std::string formatDouble(double d, int precision, bool plus=false);
+
+// Format a double d to precision decimal places.
+// If plus is true, a "+" prefix will be included for a positive number.
+// If stripZeros is true, trailing zeroes will be removed.
+std::string formatDouble(double d, int precision, bool plus=false,
+	bool stripZeros=true);
+
 MediaItem* getItemWithFocus();
 
 #ifdef _WIN32
 #include <string>
+#include <atlcomcli.h>
 #include <oleacc.h>
 
 std::wstring widen(const std::string& text);
 std::string narrow(const std::wstring& text);
 
-extern IAccPropServices* accPropServices;
-
-// uia.cpp
-bool initializeUia();
-bool terminateUia();
-bool shouldUseUiaNotifications();
-bool sendUiaNotification(const std::string& message, bool interrupt = true);
-void resetUia();
+extern CComPtr<IAccPropServices> accPropServices;
 
 #else
 // These macros exist on Windows but aren't defined by Swell for Mac.
@@ -367,7 +382,7 @@ void resetUia();
 bool isClassName(HWND hwnd, std::string className);
 
 extern bool isHandlingCommand;
-void reportTransportState(int state);
+void reportTransportState(int before, int after);
 void reportRepeat(bool repeat);
 void postGoToTrack(int command, MediaTrack* track);
 void formatPan(double pan, std::ostringstream& output);
@@ -377,5 +392,30 @@ IReaperControlSurface* createSurface();
 extern bool selectedEnvelopeIsTake;
 // exports.cpp
 void registerExports(reaper_plugin_info_t* rec);
+
+template<typename... Args>
+inline void dbg(fmt::format_string<Args...> format, Args&&... args) {
+	static const bool loggingEnabled = GetExtState("osara", "logging")[0] == '1';
+	if (!loggingEnabled) {
+		return;
+	}
+	static const std::string logFilePath = [] {
+		char tempPath[1024] = {};
+#ifdef _WIN32
+		// On Windows, ofstream will interpret a narrow string as ANSI, so use
+		// GetTempPathA.
+		GetTempPathA(sizeof(tempPath), tempPath);
+#else
+		GetTempPath(sizeof(tempPath), tempPath);
+#endif
+		std::string result(tempPath);
+		if (!result.empty() && result.back() != '/' && result.back() != '\\') {
+			result += '/';
+		}
+		return result + "osara.log";
+	}();
+	std::ofstream(logFilePath, std::ios::app)
+		<< fmt::format(format, std::forward<Args>(args)...) << '\n';
+}
 
 #endif

@@ -11,243 +11,266 @@ msgstr ""
 "Project-Id-Version: osara\n"
 "Language-Team: Norwegian Bokmal\n"
 "Language: nb_NO\n"
-"PO-Revision-Date: 2024-07-24 23:55\n"
+"PO-Revision-Date: 2026-08-15 18:52\n"
 
 msgid "enabled"
-msgstr ""
+msgstr "aktivert"
 
 #. A recording mode.
 msgid "disabled"
-msgstr ""
+msgstr "deaktivert"
 
 msgid "OSARA: Toggle"
-msgstr ""
+msgstr "Skifte"
 
 msgid "OSARA: Enable"
-msgstr ""
+msgstr "OSARA: Aktiver"
 
 msgid "OSARA: Disable"
-msgstr ""
+msgstr "OSARA: Deaktiver"
 
 msgctxt "optimal REAPER configuration"
 msgid "Would you like to adjust REAPER preferences for optimal compatibility with screen readers? Choosing yes will make the following changes:"
-msgstr ""
+msgstr "Ønsker du å justere REAPER-innstillingene for optimal kompatibilitet med skjermlesere? Ved å velge ja gjør du følgende endringer:"
 
 msgctxt "optimal REAPER configuration"
-msgid "Undocks the Media Explorer by default so that it gets focus when opened."
-msgstr ""
+msgid "1. Undock the Media Explorer so that it gets focus when opened."
+msgstr "1. Frigjør Media Explorer, slik at den får fokus når den åpnes."
 
 msgctxt "optimal REAPER configuration"
-msgid "Enables closing Media Explorer using the escape key."
-msgstr ""
+msgid "2. Enable closing Media Explorer using the escape key."
+msgstr "2. Lukk Media Explorer ved å bruke escape tasten."
 
 msgctxt "optimal REAPER configuration"
-msgid "Enables legacy file browse dialogs so that REAPER specific options in the Open and Save As dialogs can be reached with the tab key."
-msgstr ""
+msgid "3. Enable legacy file browse dialogs, so that REAPER specific options in the Open and Save As dialogs can be reached with the tab key."
+msgstr "3. Aktiver systemarv-dialogen for filer, slik at REAPER-spesifikke alternativer i dialogene Åpne og Lagre som kan nås med tabulatortasten."
 
 msgctxt "optimal REAPER configuration"
-msgid "Enables the space key to be used for check boxes, etc. in various windows."
-msgstr ""
+msgid "4. Enable the space key to be used for check boxes and buttons in various windows, wherever that's more convenient than space playing the project."
+msgstr "4. Aktiver mellomromstasten for bruk til avkryssingsbokser og knapper i ulike vinduer, der det gir mer mening enn å spille av prosjektet."
 
 msgctxt "optimal REAPER configuration"
-msgid "Shows text to indicate parallel, offline and bypassed in the FX list."
-msgstr ""
+msgid "5. Show text labels to indicate parallel, offline and bypassed in the FX list."
+msgstr "5. Vis tekstmerkelapper som viser parallell, slått av og omgått i FX-listen."
 
 msgctxt "optimal REAPER configuration"
-msgid "Uses a standard, accessible edit control for the video code editor."
-msgstr ""
+msgid "6. Use a standard, accessible edit control for the video code editor."
+msgstr "6. Bruk en standard universelt utformet redigeringskontroll for å redigere videokode."
+
+msgctxt "optimal REAPER configuration"
+msgid "7. Hide type prefixes in the FX browser so that browsing through FX is more efficient."
+msgstr "7. Skjul prefiks for type i FX-utforskeren slik at det er mer effektivt å bla gjennom FX."
+
+msgctxt "optimal REAPER configuration"
+msgid "8. Disable snap to visible grid in the MIDI Editor so movement by grid is not dependent on the horizontal zoom setting."
+msgstr "8. Deaktiver fest til synlig rutenett i MIDI-redigering slik at navigasjon ved hjelp av rutenettet ikke er avhengig av den horisontale zoom-innstillingen."
+
+msgctxt "optimal REAPER configuration"
+msgid "9. Make Control+Space play/stop when keyboard focus is in dialogs, needed with REAPER 7.41 or newer."
+msgstr "9. Gjør Control+Space til spill av/stopp når tastaturfokus er i en dialog, nødvendig med REAPER 7.41 eller nyere."
+
+msgctxt "optimal REAPER configuration"
+msgid "10. Display the file name and then the full path in the Recent Projects menu."
+msgstr "10. Vis filnavnet og deretter hele banen i menyen for Nylige prosjekter."
 
 msgctxt "optimal REAPER configuration"
 msgid "Note: if now isn't a good time to tweak REAPER, you can apply these adjustments later by going to the Extensions menu in the menu bar and then the OSARA submenu."
-msgstr ""
-
-msgid "Configure REAPER for Optimal Screen Reader Accessibility"
-msgstr ""
+msgstr "Merk: Hvis det ikke passer nå å justere på REAPER, kan du gjøre disse tilpasningene senere ved å gå til menyen for Utvidelser på menylinjen og deretter til OSARA undermeny."
 
 msgid "Error writing configuration changes."
-msgstr ""
+msgstr "Feil ved skriving av konfigurasjonsendringer."
 
 msgid "REAPER will now exit. Please restart REAPER  to apply the changes."
-msgstr ""
+msgstr "REAPER vil nå avslutte. Vennligst restart REAPER for å bruke endringene."
 
 msgid "Restart REAPER"
-msgstr ""
+msgstr "Start REAPER på nytt"
 
 msgid "volume"
-msgstr ""
+msgstr "volum"
 
 msgid "pan"
-msgstr ""
+msgstr "pan"
 
 msgid "muted"
-msgstr ""
+msgstr "dempet"
 
 msgid "unmuted"
-msgstr ""
+msgstr "ikke dempet"
 
 msgid "soloed"
-msgstr ""
+msgstr "i solo"
 
 msgid "unsoloed"
-msgstr ""
+msgstr "ikke i solo"
 
 msgid "armed"
-msgstr ""
+msgstr "opptak på"
 
 msgid "unarmed"
-msgstr ""
+msgstr "opptak av"
 
 #. Reported when navigating to the master track.
 msgid "master"
-msgstr ""
+msgstr "master"
 
 #. Reported when moving to a named project marker. {} will
 #. be replaced with the marker's name; e.g. "intro marker".
 #. used when reporting a named marker. {} will be
 #. replaced with the name of the marker; e.g. "v2 marker"
 msgid "{} marker"
-msgstr ""
+msgstr "{} markør"
 
 #. Reported when moving to an unnamed project marker. {}
 #. will be replaced with the marker's name; e.g. "marker 2".
 #. used to report an unnamed marker. {} is replaced with the marker number.  
 #. used to report an unnamed marker. {} is replaced with the marker number.  
 msgid "marker {}"
-msgstr ""
+msgstr "markør {}"
 
 #. Reported when playback reaches a named region. {} will
 #. be replaced with the region's name; e.g. "intro region".
 #. used when reporting a named region. {} will be
 #. replaced with the name of the region; e.g. "intro region"
 msgid "{} region"
-msgstr ""
+msgstr "{} region"
 
 #. Reported when playback reaches an unnamed region. {}
 #. will be replaced with the region's number; e.g. "region 2".
 #. used to report an unnamed region. {} is replaced with the region number.  
 #. used to report an unnamed region. {} is replaced with the region number.  
 msgid "region {}"
-msgstr ""
+msgstr "region {}"
+
+msgid "time selection start"
+msgstr "start for tidsvalg"
+
+msgid "time selection end"
+msgstr "slutt for tidsvalg"
+
+#. A MIDI CC. {control} will be replaced with the control number and name. {value} will be replaced with the value of the control; e.g. "control 70 (Sound Variation), 64"
+msgid "Control {control}, {value}"
+msgstr "Control {control}, {value}"
 
 #. Reported when removing automation items. {} will be
 #. replaced with the number of items; e.g. "2 automation items removed".
 msgid "{} automation item removed"
 msgid_plural "{} automation items removed"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} automasjonselement fjernet"
+msgstr[1] "{} automasjonselementer fjernet"
 
 #. Reported when removing envelope points. {} will be
 #. replaced with the number of points; e.g. "2 points removed".
 msgid "{} point removed"
 msgid_plural "{} points removed"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} punkt fjernet"
+msgstr[1] "{} punkter fjernet"
 
 #. A shape for an envelope point.
 msgid "linear"
-msgstr ""
+msgstr "lineær"
 
 #. A shape for an envelope point.
 msgid "square"
-msgstr ""
+msgstr "kvadrat"
 
 #. A shape for an envelope point.
 msgid "slow start/end"
-msgstr ""
+msgstr "langsom start/slutt"
 
 #. A shape for an envelope point.
 msgid "fast start"
-msgstr ""
+msgstr "rask start"
 
 #. A shape for an envelope point.
 msgid "fast end"
-msgstr ""
+msgstr "rask slutt"
 
 #. A shape for an envelope point.
 msgid "bezier"
-msgstr ""
+msgstr "bezier"
 
 #. Reported when moving to an envelope point. {point} will be
 #. replaced with the number of the point. {value} will be replaced with its
 #. value. {shape} will be replaced with its shape.
 #. For example: "point 1 value 0.00 dB linear".
 msgid "point {point} value {value} {shape}"
-msgstr ""
+msgstr "punkt {point} verdi {value} {shape}"
 
 msgid "selected"
-msgstr ""
+msgstr "valgt"
 
 msgid "unselected"
-msgstr ""
+msgstr "ikke valgt\t#"
 
 msgid "no take envelopes"
-msgstr ""
+msgstr "ingen tagnings-kurve"
 
 msgid "no track envelopes"
-msgstr ""
+msgstr "ingen spor-kurve"
 
 msgid "no visible envelopes"
-msgstr ""
+msgstr "ingen synlige kurver"
 
 #. Reported when selecting an envelope. {} will be replaced
 #. with the name of the envelope; e.g. "volume envelope".
 msgid "{} envelope"
-msgstr ""
+msgstr "{} kurve"
 
 msgid "bypassed"
-msgstr ""
+msgstr "omgått"
 
 msgid "Change Automation Item Selection"
-msgstr ""
+msgstr "Endre valg av automasjonselement"
 
 #. Reported when moving to an automation item. {} will be
 #. replaced with the name or number of the automation item; e.g. "auto 2".
 msgid "auto {}"
-msgstr ""
+msgstr "auto {}"
 
 #. Reported when copying automation items. {} will be replaced
 #. with the number of items; e.g. "2 automation items copied".
 msgid "{} automation item copied"
 msgid_plural "{} automation items copied"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} automasjonselement kopiert"
+msgstr[1] "{} automasjonselementer kopiert"
 
 #. Reported when copying envelope points. {} will be replaced
 #. with the number of points; e.g. "2 envelope points copied".
 msgid "{} envelope point copied"
 msgid_plural "{} envelope points copied"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} envelope-punkt kopiert"
+msgstr[1] "{} kurve-punkter kopiert"
 
 msgid "no envelopes toggled"
-msgstr ""
+msgstr "ingen kurver endret"
 
 msgid "showed track {} envelope"
-msgstr ""
+msgstr "viste kurve for spor {}"
 
 msgid "hid track {} envelope"
-msgstr ""
+msgstr "skjulte kurve for spor {}"
 
 msgid "showed take {} envelope"
-msgstr ""
+msgstr "viste kurve for tagning {}"
 
 msgid "hid take {} envelope"
-msgstr ""
+msgstr "skjulte kurve for tagning {}"
 
 #. Reported when selecting envelope points. {} will be replaced
 #. with the number of points; e.g. "2 points selected".
 msgid "{} point selected"
 msgid_plural "{} points selected"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} punkt valgt"
+msgstr[1] "{} punkter valgt"
 
 #. Reported when moving items to indicate that no movement
 #. occurred.
 msgid "no change"
-msgstr ""
+msgstr "ingen endring"
 
 msgid "inserted automation item"
-msgstr ""
+msgstr "satt inn automasjonsobjekt"
 
 #. Reported when adding automation items. {} will be
 #. replaced with the number of items; e.g. "2 automation items added".
@@ -255,77 +278,75 @@ msgstr ""
 #. replaced with the number of items; e.g. "2 automation items added".
 msgid "{} automation item added"
 msgid_plural "{} automation items added"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} automasjonsobjekt lagt til"
+msgstr[1] "{} automasjonsobjekter lagt til"
 
 msgid "no automation items glued"
-msgstr ""
+msgstr "ingen automasjonsobjekter limt sammen"
 
 msgid "glued automation items"
-msgstr ""
+msgstr "automasjonsobjekter limt sammen"
 
 msgid "active"
-msgstr ""
+msgstr "aktiv"
 
 #. Reported when switching tabs in an effect such as ReaEQ.
 #. {} will be replaced with the name of the tab; e.g. "1 tab".
 msgid "{} tab"
-msgstr ""
+msgstr "{} fane"
 
 #. The name of a musical note.
 msgid "c"
-msgstr ""
+msgstr "c"
 
 #. The name of a musical note.
 msgid "c sharp"
-msgstr ""
+msgstr "ciss"
 
 #. The name of a musical note.
 msgid "d"
-msgstr ""
+msgstr "d"
 
 #. The name of a musical note.
 msgid "d sharp"
-msgstr ""
+msgstr "diss"
 
 #. The name of a musical note.
 msgid "e"
-msgstr ""
+msgstr "e"
 
 #. The name of a musical note.
 msgid "f"
-msgstr ""
+msgstr "f"
 
 #. The name of a musical note.
 msgid "f sharp"
-msgstr ""
+msgstr "fiss"
 
 #. The name of a musical note.
 msgid "g"
-msgstr ""
+msgstr "g"
 
 #. The name of a musical note.
 msgid "g sharp"
-msgstr ""
+msgstr "giss"
 
 #. The name of a musical note.
 msgid "a"
-msgstr ""
+msgstr "a"
 
 #. The name of a musical note.
 msgid "a sharp"
-msgstr ""
+msgstr "aiss"
 
 #. The name of a musical note.
 msgid "b"
-msgstr ""
+msgstr "h"
 
-#. used when reporting the number of notes in a chord.
-#. {} will be replaced by the number of notes. E.g. "3 notes"
 msgid "{} note"
 msgid_plural "{} notes"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} note"
+msgstr[1] "{} noter"
 
 #. used when reporting the number of muted notes in a chord.
 #. {} will be replaced by the number of muted notes. E.g. "3 muted"
@@ -333,38 +354,43 @@ msgstr[1] ""
 #. {} will be replaced by the number of muted notes. E.g. "3 muted"
 msgid "{} muted"
 msgid_plural "{} muted"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} dempet"
+msgstr[1] "{} dempede"
 
 msgid "noncontiguous selection"
-msgstr ""
+msgstr "ikke-sammenhengende utvalg"
+
+#. used when reporting the number of notes in a chord.
+#. {} will be replaced by the number of notes. E.g. "3 notes"
+msgid "{} notes"
+msgstr "{} noter"
 
 msgid "velocity"
-msgstr ""
+msgstr "styrke"
 
 msgid "nothing pasted"
-msgstr ""
+msgstr "ingenting limt inn"
 
 #. Reported when pasting events in the MIDI editor. {} will be replaced with
 #. the number of events; e.g. "2 events added".
 msgid "{} event added"
 msgid_plural "{} events added"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} hendelse lagt til"
+msgstr[1] "{} hendelser lagt til"
 
 #. Used when events are deleted in the MIDI editor. {} is
 #. replaced by the number of events. E.g. "3 events removed"
 msgid "{} event removed"
 msgid_plural "{} events removed"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} hendelse fjernet"
+msgstr[1] "{} hendelser fjernet"
 
 #. Reported when copying events in the MIDI editor. {} will be replaced with
 #. the number of events; e.g. "2 events copied".
 msgid "{} event copied"
 msgid_plural "{} events copied"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} hendelse kopiert"
+msgstr[1] "{} hendelser kopiert"
 
 #. used when notes are selected in the MIDI editor.
 #. {} is replaced by the number of notes. E.g. "4 notes selected"
@@ -372,8 +398,8 @@ msgstr[1] ""
 #. {} is replaced by the number of notes. E.g. "4 notes selected"
 msgid "{} note selected"
 msgid_plural "{} notes selected"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} note valgt"
+msgstr[1] "{} noter valgt"
 
 #. Reported when selecting CC events in the MIDI editor. {} will be replaced with
 #. the number of events; e.g. "2 CC events selected".
@@ -381,268 +407,264 @@ msgstr[1] ""
 #. is replaced by the number of events selected.
 msgid "{} CC event selected"
 msgid_plural "{} CC events selected"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} CC-hendelse valgt"
+msgstr[1] "{} CC-hendelser valgt"
 
 #. Reported when selecting events in the MIDI editor. {} will be replaced with
 #. the number of events; e.g. "2 events selected".
 msgid "{} event selected"
 msgid_plural "{} events selected"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} hendelse valgt"
+msgstr[1] "{} hendelser valgt"
 
 #. Used in the MIDI editor when CC events are unselected.  {}
 #. is replaced by the number of events unselected.
 msgid "{} CC event unselected"
 msgid_plural "{} CC events unselected"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} hendelse ikke markert"
+msgstr[1] "{} hendelser ikke markert"
 
 msgid "Bank Select MSB"
-msgstr ""
+msgstr "Bank velg MSB"
 
 msgid "Mod Wheel MSB"
-msgstr ""
+msgstr "Mod-hjul MSB"
 
 msgid "Breath MSB"
-msgstr ""
+msgstr "Pust MSB"
 
 msgid "Foot Pedal MSB"
-msgstr ""
+msgstr "Fotpedal MSB"
 
 msgid "Portamento MSB"
-msgstr ""
+msgstr "Portamento MSB"
 
 msgid "Data Entry MSB"
-msgstr ""
+msgstr "Inntastingsdata MSB"
 
 msgid "Volume MSB"
-msgstr ""
+msgstr "Volum MSB"
 
 msgid "Balance MSB"
-msgstr ""
+msgstr "Balanse MSB"
 
 msgid "Pan Position MSB"
-msgstr ""
+msgstr "Panposisjon MSB"
 
 msgid "Expression MSB"
-msgstr ""
+msgstr "Expression MSB"
 
 msgid "Control 1 MSB"
-msgstr ""
+msgstr "Styring 1 MSB"
 
 msgid "Control 2 MSB"
-msgstr ""
+msgstr "Styring 2 MSB"
 
 msgid "GP Slider 1"
-msgstr ""
+msgstr "GP-glidebryter 1"
 
 msgid "GP Slider 2"
-msgstr ""
+msgstr "GP-glidebryter 2"
 
 msgid "GP Slider 3"
-msgstr ""
+msgstr "GP-glidebryter 3"
 
 msgid "GP Slider 4"
-msgstr ""
+msgstr "GP-glidebryter 4"
 
 msgid "Bank Select LSB"
-msgstr ""
+msgstr "Bankvalg LSB"
 
 msgid "Mod Wheel LSB"
-msgstr ""
+msgstr "Mod-hjul LSB"
 
 msgid "Breath LSB"
-msgstr ""
+msgstr "Pust LSB"
 
 msgid "Foot Pedal LSB"
-msgstr ""
+msgstr "Fotpedal LSB"
 
 msgid "Portamento LSB"
-msgstr ""
+msgstr "Portamento LSB"
 
 msgid "Data Entry LSB"
-msgstr ""
+msgstr "Inntastingsdata LSB"
 
 msgid "Volume LSB"
-msgstr ""
+msgstr "Volum LSB"
 
 msgid "Balance LSB"
-msgstr ""
+msgstr "Balanse LSB"
 
 msgid "Pan Position LSB"
-msgstr ""
+msgstr "Panposisjon LSB"
 
 msgid "Expression LSB"
-msgstr ""
+msgstr "Expression LSB"
 
 msgid "Control 1 LSB"
-msgstr ""
+msgstr "Styring 1 LSB"
 
 msgid "Control 2 LSB"
-msgstr ""
+msgstr "Styring 2 LSB"
 
 msgid "Hold Pedal (on/off)"
-msgstr ""
+msgstr "Holdpedal (på/av)"
 
 msgid "Portamento (on/off)"
-msgstr ""
+msgstr "Portamento (på/av)"
 
 msgid "Sostenuto (on/off)"
-msgstr ""
+msgstr "Sostenuto (på/av)"
 
 msgid "Soft Pedal (on/off)"
-msgstr ""
+msgstr "Dempepedal (på/av)"
 
 msgid "Legato Pedal (on/off)"
-msgstr ""
+msgstr "Legatopedal (på/av)"
 
 msgid "Hold 2 Pedal (on/off)"
-msgstr ""
+msgstr "Holdpedal 2 (på/av)"
 
 msgid "Sound Variation"
-msgstr ""
+msgstr "Lydvariasjon"
 
 msgid "Timbre/Resonance"
-msgstr ""
+msgstr "Klang/Resonanse"
 
 msgid "Sound Release"
-msgstr ""
+msgstr "Lyd-release"
 
 msgid "Sound Attack"
-msgstr ""
+msgstr "Lyd-attack"
 
 msgid "Brightness/Cutoff Freq"
-msgstr ""
+msgstr "Diskant/Cutoff-frekvens"
 
 msgid "Sound Control 6"
-msgstr ""
+msgstr "Lydstyring 6"
 
 msgid "Sound Control 7"
-msgstr ""
+msgstr "Lydstyring 7"
 
 msgid "Sound Controll 8"
-msgstr ""
+msgstr "Lydstyring 8"
 
 msgid "Sound Control 9"
-msgstr ""
+msgstr "Lydstyring 9"
 
 msgid "Sound Control 10"
-msgstr ""
+msgstr "Lydstyring 10"
 
 msgid "GP Button 1 (on/off)"
-msgstr ""
+msgstr "GP-knapp 1 (på/av)"
 
 msgid "GP Button 2 (on/off)"
-msgstr ""
+msgstr "GP-knapp 2 (på/av)"
 
 msgid "GP Button 3 (on/off)"
-msgstr ""
+msgstr "GP-knapp 3 (på/av)"
 
 msgid "GP Button 4 (on/off)"
-msgstr ""
+msgstr "GP-knapp 4 (på/av)"
 
 msgid "Effects Level"
-msgstr ""
+msgstr "Effektnivå"
 
 msgid "Tremolo Level"
-msgstr ""
+msgstr "Tremolonivå"
 
 msgid "Chorus Level"
-msgstr ""
+msgstr "Chorusnivå"
 
 msgid "Celeste Level"
-msgstr ""
+msgstr "Celestenivå"
 
 msgid "Phaser Level"
-msgstr ""
+msgstr "Fasernivå"
 
 msgid "Data Button Inc"
-msgstr ""
+msgstr "Dataknapp øke"
 
 msgid "Data Button Dec"
-msgstr ""
+msgstr "Dataknapp senke"
 
 msgid "Non-Reg Parm LSB"
-msgstr ""
+msgstr "Non-Reg Parm LSB"
 
 msgid "Non-Reg Parm MSB"
-msgstr ""
+msgstr "Non-Reg Parm MSB"
 
 msgid "Reg Parm LSB"
-msgstr ""
+msgstr "Reg Parm LSB"
 
 msgid "Reg Parm MSB"
-msgstr ""
+msgstr "Reg Parm MSB"
 
 msgid "All Sound Off"
-msgstr ""
+msgstr "All lyd av"
 
 msgid "Reset"
-msgstr ""
+msgstr "Nullstill"
 
 msgid "Local"
-msgstr ""
+msgstr "Lokal"
 
 msgid "All Notes Off"
-msgstr ""
+msgstr "Alle noter av"
 
 msgid "Omni On"
-msgstr ""
+msgstr "Omni på"
 
 msgid "Omni Off"
-msgstr ""
+msgstr "Omni av"
 
 msgid "Mono On"
-msgstr ""
+msgstr "Mono på"
 
 msgid "Poly On"
-msgstr ""
+msgstr "Poly på"
 
 #. MIDI poly aftertouch. {note} will be replaced with the note
 #. name and {value} will be replaced with the aftertouch value; e.g.
 #. "Poly Aftertouch c sharp 4  96"
 msgid "Poly Aftertouch {note}  {value}"
-msgstr ""
-
-#. A MIDI CC. {control} will be replaced with the control number and name. {value} will be replaced with the value of the control; e.g. "control 70 (Sound Variation), 64"
-msgid "Control {control}, {value}"
-msgstr ""
+msgstr "Poly Aftertouch {note}  {value}"
 
 msgid "Program {}"
-msgstr ""
+msgstr "Program {}"
 
 #. MIDI channel pressure. {} will be replaced with the pressure value; e.g. "Channel pressure 64"
 msgid "Channel pressure {}"
-msgstr ""
+msgstr "Trykkverdi kanal {}"
 
 #. MIDI pitch bend.  {} will be replaced with the pitch bend value; e.g. "Pitch Bend 100"
 msgid "Pitch Bend {}"
-msgstr ""
+msgstr "Pitch bend {}"
 
 msgid "Change CC Selection"
-msgstr ""
+msgstr "Endre CC-utvalg"
 
 msgid "OSARA: Move to next midi item on track"
-msgstr ""
+msgstr "OSARA: Flytt til neste midi-objekt på spor"
 
 msgid "OSARA: Move to previous midi item on track"
-msgstr ""
+msgstr "OSARA: Flytt til forrige midi-objekt på spor"
 
 #. Used when reporting activation of the next/previous track in
 #. the MIDI editor. {num} will be replaced with the item number. {name} will
 #. be replaced with its name. For example: "item 2 chorus".
 msgid "item {num} {name}"
-msgstr ""
+msgstr "objekt {num} {name}"
 
 msgid "no time selection"
-msgstr ""
+msgstr "ingen tidsutvalg"
 
 msgid "no notes selected"
-msgstr ""
+msgstr "ingen noter valgt"
 
 msgid "OSARA: Select all notes with the same pitch within time selection"
-msgstr ""
+msgstr "OSARA: Velg alle noter med samme tonehøyde innen tidsutvalg"
 
 #. used when splitting notes in the midi editor.
 #. {oldCount} is replaced by the number of notes that were selected
@@ -651,8 +673,8 @@ msgstr ""
 #. the command. E.g. "1 note split into 2"
 msgid "{oldCount} note split into {newCount}"
 msgid_plural "{oldCount} notes split into {newCount}"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{oldCount} note delt i {newCount}"
+msgstr[1] "{oldCount} noter delt i {newCount}"
 
 #. used when joining notes in the midi editor.
 #. {oldCount} is replaced by the number of notes that were selected
@@ -661,1127 +683,1338 @@ msgstr[1] ""
 #. the command. E.g. "2 notes joined into 1"
 msgid "{oldCount} note joined into {newCount}"
 msgid_plural "{oldCount} notes joined into {newCount}"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{oldCount} note slått sammen til {newCount}"
+msgstr[1] "{oldCount} noter slått sammen til {newCount}"
 
 msgid "velocity +1"
-msgstr ""
+msgstr "styrke +1"
 
 msgid "velocity +10"
-msgstr ""
+msgstr "styrke +10"
 
 msgid "velocity -1"
-msgstr ""
+msgstr "styrke -1"
 
 msgid "velocity -10"
-msgstr ""
+msgstr "styrke -10"
 
 msgid "velocity changed"
-msgstr ""
+msgstr "styrke endret"
 
 #. Used when changing note length in the MIDI
 #. editor. {} is replaced by the number of notes, e.g. "3
 #. notes lengthened pixel"
 msgid "{} note lengthened pixel"
 msgid_plural "{} notes lengthened pixel"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} note forlenget piksel"
+msgstr[1] "{} noter forlenget piksel"
 
 #. Used when changing note length in the MIDI
 #. editor. {} is replaced by the number of notes, e.g. "3
 #. notes shortened pixel"
 msgid "{} note shortened pixel"
 msgid_plural "{} notes shortened pixel"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} note forkortet piksel"
+msgstr[1] "{} noter forkortet piksel"
 
 #. Used when changing note length in the MIDI
 #. editor. {} is replaced by the number of notes, e.g. 
 #. "3 notes lengthened grid unit"
 msgid "{} note lengthened grid unit"
 msgid_plural "{} notes lengthened grid unit"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} note forlenget med rutenett"
+msgstr[1] "{} noter forlenget med rutenett"
 
 #. Used when changing note length in the MIDI
 #. editor. {} is replaced by the number of notes, e.g. 
 #. "3 notes shortened grid unit"
 msgid "{} note shortened grid unit"
 msgid_plural "{} notes shortened grid unit"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} note forkortet med rutenett"
+msgstr[1] "{} noter forkortet med rutenett"
 
 #. Used when changing note length in the MIDI
 #. editor. {} is replaced by the number of notes, e.g. 
 #. "3 notes set length to grid size"
 msgid "{} note set length to grid size"
 msgid_plural "{} notes length set to grid size"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} notelengde satt til maskestørrelse"
+msgstr[1] "{} notelengder satt til maskestørrelse"
 
 #. Used when changing note length in the MIDI
 #. editor. {} is replaced by the number of notes, e.g. 
 #. "3 notes made legato"
 msgid "{} note made legato"
 msgid_plural "{} notes made legato"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} note gjort legato"
+msgstr[1] "{} noter gjort legato"
 
 #. Used when changing note length in the MIDI
 #. editor. {} is replaced by the number of notes, e.g. 
 #. "3 notes length changed"
 msgid "{} note length changed"
 msgid_plural "{} notes length changed"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} notelengde endret"
+msgstr[1] "{} notelengder endret"
 
 #. Used when changing note pitch in the MIDI
 #. editor. {} is replaced by the number of notes, e.g. 
 #. "3 notes semitone up"
 msgid "{} note semitone up"
 msgid_plural "{} notes semitone up"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} note halvtone opp"
+msgstr[1] "{} noter halvtone opp"
 
 #. Used when changing note pitch in the MIDI
 #. editor. {} is replaced by the number of notes, e.g. 
 #. "3 notes semitone down"
 msgid "{} note semitone down"
 msgid_plural "{} notes semitone down"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} note halvtone ned"
+msgstr[1] "{} noter halvtone ned"
 
 #. Used when changing note pitch in the MIDI
 #. editor. {} is replaced by the number of notes, e.g. 
 #. "3 notes octave up"
 msgid "{} note octave up"
 msgid_plural "{} notes octave up"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} note oktav opp"
+msgstr[1] "{} noter oktav opp"
 
 #. Used when changing note pitch in the MIDI
 #. editor. {} is replaced by the number of notes, e.g. 
 #. "3 notes octave down"
 msgid "{} note octave down"
 msgid_plural "{} notes octave down"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} note oktav ned"
+msgstr[1] "{} noter oktav ned"
 
 #. Used when changing note pitch in the MIDI
 #. editor. {} is replaced by the number of notes, e.g. 
 #. "3 notes semitone up ignoring scale"
 msgid "{} note semitone up ignoring scale"
 msgid_plural "{} notes semitone up ignoring scale"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} note halvtone opp uavhengig av skala"
+msgstr[1] "{} noter halvtone opp uavhengig av skala"
 
 #. Used when changing note pitch in the MIDI
 #. editor. {} is replaced by the number of notes, e.g. 
 #. "3 notes semitone down ignoring scale"
 msgid "{} note semitone down ignoring scale"
 msgid_plural "{} notes semitone down ignoring scale"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} note halvtone ned uavhengig av skala"
+msgstr[1] "{} noter halvtone ned uavhengig av skala"
 
 #. Used when changing note pitch in the MIDI
 #. editor. {} is replaced by the number of notes, e.g. 
 #. "3 notes pitch changed"
 msgid "{} note pitch changed"
 msgid_plural "{} notes pitch changed"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} notes tonehøyde endret"
+msgstr[1] "{} noters tonehøyde endret"
 
 #. Used when moving CCs in the MIDI
 #. editor. {} is replaced by the number of CCs, e.g. 
 #. "3 CC events pixel left"
 msgid "{} CC event pixel left"
 msgid_plural "{} CC events pixel left"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} CC-hendelse piksel venstre"
+msgstr[1] "{} CC-hendelser piksel venstre"
 
 #. Used when moving CCs in the MIDI
 #. editor. {} is replaced by the number of CCs, e.g. 
 #. "3 CC events pixel right"
 msgid "{} CC event pixel right"
 msgid_plural "{} CC events pixel right"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} CC-hendelse piksel høyre"
+msgstr[1] "{} CC-hendelser piksel høyre"
 
 #. Used when moving CCs in the MIDI
 #. editor. {} is replaced by the number of CCs, e.g. 
 #. "3 CC events grid unit left"
 msgid "{} CC event grid unit left"
 msgid_plural "{} CC events grid unit left"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} CC-hendelse maskestørrelse venstre"
+msgstr[1] "{} CC-hendelser maskestørrelse venstre"
 
 #. Used when moving CCs in the MIDI
 #. editor. {} is replaced by the number of CCs, e.g. 
 #. "3 CC events grid unit right"
 msgid "{} CC event grid unit right"
 msgid_plural "{} CC events grid unit right"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} CC-hendelse maskestørrelse høyre"
+msgstr[1] "{} CC-hendelser maskestørrelse høyre"
 
 #. Used when moving CCs in the MIDI
 #. editor. {} is replaced by the number of CCs, e.g. 
 #. "3 CC events moved"
 msgid "{} CC event moved"
 msgid_plural "{} CC events moved"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} CC-hendelse flyttet"
+msgstr[1] "{} CC-hendelser flyttet"
 
 #. Used when moving notes in the MIDI
 #. editor. {} is replaced by the number of notes, e.g. 
 #. "3 notes pixel left"
 msgid "{} note pixel left"
 msgid_plural "{} notes pixel left"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} note piksel venstre"
+msgstr[1] "{} noter piksel venstre"
 
 #. Used when moving notes in the MIDI
 #. editor. {} is replaced by the number of notes, e.g. 
 #. "3 notes pixel right"
 msgid "{} note pixel right"
 msgid_plural "{} notes pixel right"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} note piksel høyre"
+msgstr[1] "{} noter piksel høyre"
 
 #. Used when moving notes in the MIDI
 #. editor. {} is replaced by the number of notes, e.g. 
 #. "3 notes grid unit left"
 msgid "{} note grid unit left"
 msgid_plural "{} notes grid unit left"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} note maskestørrelse venstre"
+msgstr[1] "{} noter maskestørrelse venstre"
 
 #. Used when moving notes in the MIDI
 #. editor. {} is replaced by the number of notes, e.g. 
 #. "3 notes grid unit right"
 msgid "{} note grid unit right"
 msgid_plural "{} notes grid unit right"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} note maskestørrelse høyre"
+msgstr[1] "{} noter maskestørrelse høyre"
 
 #. Used when moving notes in the MIDI
 #. editor. {} is replaced by the number of notes, e.g. 
 #. "3 notes pixel left"
 msgid "{} note start moved"
 msgid_plural "{} notes start moved"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} notestart flyttet"
+msgstr[1] "{} notestarter flyttet"
 
 #. Used when MIDI CCs change. {} is replaced by the
 #. number of values changed. E.g. "2 values increased"
 msgid "{} value increase"
 msgid_plural "{} values increased"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} verdi økt"
+msgstr[1] "{} verdier økt"
 
 #. Used when MIDI CCs change. {} is replaced by the
 #. number of values changed. E.g. "2 values decreased"
 msgid "{} value decreased"
 msgid_plural "{} values decreased"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} verdi redusert"
+msgstr[1] "{} verdier redusert"
 
 #. Used when MIDI CCs change. {} is replaced by the
 #. number of values changed. E.g. "2 values changed"
 msgid "{} value changed"
 msgid_plural "{} values changed"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} verdi endret"
+msgstr[1] "{} verdier endret"
 
 msgid "Enabled MIDI inputs as step input"
-msgstr ""
+msgstr "Aktiverte MIDI-innganger for steg-inndata"
 
 msgid "Disabled MIDI inputs as step input"
-msgstr ""
+msgstr "Deaktiverte MIDI-innganger for steg-inndata"
 
 msgid "Enabled  f1-f12 as step input"
-msgstr ""
+msgstr "Aktiverte f1-f12 for steg-inndata"
 
 msgid "Disabled  f1-f12 as step input"
-msgstr ""
+msgstr "Deaktiverte f1-f12 for steg-inndata"
+
+#. used when reporting the number of muted notes.
+#. {} will be replaced by the number of muted notes. E.g. "3 notes muted"
+msgid "{} note muted"
+msgid_plural "{} notes muted"
+msgstr[0] "{} note dempet"
+msgstr[1] "{} noter dempet"
+
+#. used when reporting the number of unmuted notes.
+#. {} will be replaced by the number of notes. E.g. "3 notes unmuted"
+msgid "{} note unmuted"
+msgid_plural "{} notes unmuted"
+msgstr[0] "demping av for {} note"
+msgstr[1] "demping av for {} noter"
+
+#. used when reporting the number of muted CCs.
+#. {} will be replaced by the number of muted CCs. E.g. "3 CCs muted"
+msgid "{} CC muted"
+msgid_plural "{} CCs muted"
+msgstr[0] "{} CC dempet"
+msgstr[1] "{} CCer dempet"
+
+#. used when reporting the number of unmuted CCs.
+#. {} will be replaced by the number of CCs. E.g. "3 CCs unmuted"
+msgid "{} CC unmuted"
+msgid_plural "{} CCs unmuted"
+msgstr[0] "demping av for {} CC"
+msgstr[1] "demping av for {} CCer"
+
+#. used when reporting the number of muted events.
+#. {} will be replaced by the number of muted events. E.g. "3 events muted"
+msgid "{} event muted"
+msgid_plural "{} events muted"
+msgstr[0] "{} hendelse dempe"
+msgstr[1] "{} dempede hendelser"
+
+#. used when reporting the number of unmuted events.
+#. {} will be replaced by the number of events. E.g. "3 events unmuted"
+msgid "{} event unmuted"
+msgid_plural "{} events unmuted"
+msgstr[0] "{} dempet hendelse"
+msgstr[1] "demping av for {} hendelser"
 
 msgid "enabled snap to grid"
-msgstr ""
+msgstr "aktiverte fest til rutenett"
 
 msgid "disabled snap to grid"
-msgstr ""
+msgstr "deaktiverte fest til rutenett"
 
 #. Reported when zooming in or out horizontally. {} will be
 #. replaced with the number of pixels per beat; e.g. 100 pixels/beat.
 msgid "{} pixels/beat"
-msgstr ""
+msgstr "{} piksler/slag"
 
 #. Reported when zooming in or out horizontally. {} will be
 #. replaced with the number of pixels per second; e.g. 100 pixels/second.
 #. Reported when zooming in or out horizontally. {} will be
 #. replaced with the number of pixels per second; e.g. 100 pixels/second.
 msgid "{} pixels/second"
-msgstr ""
+msgstr "{} piksler/sekund"
+
+#. Reported when zooming in or out vertically in the MIDI editor. {} will be
+#. replaced with the number of pixels per semitone; e.g. 12 pixels/semitone.
+msgid "{} pixels/semitone"
+msgstr "{} piksler/halvtone"
 
 #. Reported in Parameters dialogs for a toggle (such as mute)
 #. which is on.
 msgid "on"
-msgstr ""
+msgstr "på"
 
 #. Reported in Parameters dialogs for a toggle (such as mute)
 #. which is off.
 msgid "off"
+msgstr "av"
+
+msgid "Unrestrict minimum"
+msgstr "Ikke begrens minimum"
+
+msgid "Restrict minimum to current value"
+msgstr "Begrense minimum til gjeldende verdi"
+
+msgid "Unrestrict maximum"
+msgstr "Ikke begrens maksimum"
+
+msgid "Restrict maximum to current value"
+msgstr "Begrense maksimum til gjeldende verdi"
+
+msgid "Channel lists must contain positive numbers separated by spaces."
+msgstr ""
+
+msgid "Channels must be from 1 through 128."
+msgstr ""
+
+#. An error reported when the channels mapped to an an FX
+#. input or output could not be set.
+msgid "Could not set the channels."
 msgstr ""
 
 msgid "low shelf"
-msgstr ""
+msgstr "lavhylle"
 
 msgid "high shelf"
-msgstr ""
+msgstr "høyhylle"
 
 msgid "band"
-msgstr ""
+msgstr "bånd"
 
 msgid "low pass"
-msgstr ""
+msgstr "lavpass"
 
 msgid "high pass"
-msgstr ""
+msgstr "høypass"
 
 msgid "all pass"
-msgstr ""
+msgstr "allpass"
 
 msgid "notch"
-msgstr ""
+msgstr "båndstopp"
 
 msgid "band pass"
-msgstr ""
+msgstr "båndpass"
 
 msgid "parallel band pass"
-msgstr ""
+msgstr "parallellbåndpass"
 
 msgid "band (alt)"
-msgstr ""
+msgstr "bånd (alt)"
 
 msgid "band (alt 2)"
-msgstr ""
+msgstr "bånd (alt 2)"
 
 #. A parameter in the FX Parameters dialog which adjusts
 #. whether a ReaEQ band is enabled. {} will be replaced with the band
 #. number; e.g. "band 2 enable".
 msgid "Band {} enable"
-msgstr ""
+msgstr "Aktivere bånd {}"
 
 #. A parameter in the FX Parameters dialog which adjusts
 #. the type of a ReaEQ band. {} will be replaced with the band number;
 #. e.g. "band 2 type".
 msgid "Band {} type"
+msgstr "Bånd {} type"
+
+#. A category in the FX Parameters dialog containing input pin
+#. mappings.
+msgid "Inputs"
+msgstr ""
+
+#. The name of an unnamed input pin in the FX Parameters dialog.
+#. {} will be replaced with the pin number.
+msgid "Input {}"
+msgstr ""
+
+#. A parameter in the FX Parameters dialog which configures the
+#. track channels from which an input pin receives. {} is the pin name.
+msgid "{} receives from track channels"
+msgstr ""
+
+#. A category in the FX Parameters dialog containing output pin
+#. mappings.
+msgid "Outputs"
+msgstr ""
+
+#. The name of an unnamed output pin in the FX Parameters dialog.
+#. {} will be replaced with the pin number.
+msgid "Output {}"
+msgstr ""
+
+#. A parameter in the FX Parameters dialog which configures the
+#. track channels to which an output pin is sent. {} is the pin name.
+msgid "{} sends to track channels"
 msgstr ""
 
 msgid "FX Parameters"
-msgstr ""
+msgstr "FX-parametre"
+
+msgid "Show/hide &envelope"
+msgstr "Vis skjul &kurve"
 
 msgid "Go to send destination track"
-msgstr ""
+msgstr "Gå til destinasjonsspor for send"
 
 msgid "Delete send"
-msgstr ""
+msgstr "Slett send"
 
 msgid "Go to receive source track"
-msgstr ""
+msgstr "Gå til motta kildespor"
 
 msgid "Delete receive"
-msgstr ""
+msgstr "Slett mottak"
 
 msgid "Delete hardware output"
-msgstr ""
+msgstr "Slett maskinvareutgang"
 
 #. Indicates no MIDI channels for a send in the Track
 #. Parameters dialog.
-#. An automation mode.
-#. Used when reporting all tracks which are muted, soloed, etc.
-#. to indicate that no tracks are muted, soloed, etc.
+msgctxt "MIDI channel"
 msgid "none"
-msgstr ""
+msgstr "ingen"
 
 #. Indicates all MIDI channels for a send in the Track
 #. Parameters dialog.
 msgid "all"
-msgstr ""
+msgstr "alle"
 
 #. An option in the context menu for the source and
 #. destination audio channel parameters in the OSARA Track Parameters
 #. dialog.
 msgid "Add &2 new channels"
-msgstr ""
+msgstr "Legg til &2 nye kanaler"
 
 #. An option in the context menu for the source and
 #. destination audio channel parameters in the OSARA Track Parameters
 #. dialog.
 msgid "Add &4 new channels"
-msgstr ""
+msgstr "Legg til &4 nye kanaler"
+
+msgctxt "audio channel"
+msgid "none"
+msgstr "ingen"
 
 msgid "post-fader"
-msgstr ""
+msgstr "postfader"
 
 msgid "pre-fx"
-msgstr ""
+msgstr "pre-fx"
 
 msgid "post-fx"
+msgstr "post-fx"
+
+msgid "sends"
+msgstr ""
+
+msgid "receives"
+msgstr ""
+
+msgid "hardware outputs"
 msgstr ""
 
 msgid "mute"
-msgstr ""
+msgstr "demp"
 
 msgid "mono"
-msgstr ""
+msgstr "mono"
 
 msgid "source MIDI channel"
-msgstr ""
+msgstr "kilde-MIDIkanal"
 
 msgid "destination MIDI channel"
-msgstr ""
+msgstr "mål-MIDIkanal"
 
 msgid "source audio channel"
-msgstr ""
+msgstr "kilde-lydkanal"
 
 msgid "destination audio channel"
-msgstr ""
+msgstr "mål-lydkanal"
 
 msgid "send type"
-msgstr ""
-
-#. Indicates a parameter for a track send in the Track Parameters
-#. dialog.
-msgid "send"
-msgstr ""
-
-#. Indicates a parameter for a track receive in the Track
-#. Parameters dialog.
-msgid "receive"
-msgstr ""
-
-#. Indicates a parameter for a hardware audio output in the
-#.  Track Parameters dialog.
-msgid "hardware"
-msgstr ""
+msgstr "send type"
 
 msgid "Track Parameters"
-msgstr ""
+msgstr "Sporparametre"
 
 msgid "item volume"
-msgstr ""
+msgstr "objektvolum"
 
 msgid "take volume"
-msgstr ""
+msgstr "tagningsvolum"
 
 msgid "take pan"
-msgstr ""
+msgstr "tagningspan"
 
 msgid "fade in length"
-msgstr ""
+msgstr "inntoningslengde"
 
 msgid "Fade out length"
-msgstr ""
+msgstr "Uttoningslengde"
 
 msgid "Item Parameters"
-msgstr ""
+msgstr "Objektparametre"
 
 #. In the menu of effects when opening the FX Parameters
 #. dialog, this is presented after effects which are monitoring FX.
 msgid "[monitor]"
-msgstr ""
+msgstr "[lytting]"
 
 #. In the menu of effects when opening the FX Parameters
 #. dialog, this is presented after effects which are input FX.
 msgid "[input]"
-msgstr ""
+msgstr "[inngang]"
 
 msgid "(Container Parameters)"
-msgstr ""
+msgstr "(Beholderparametre)"
 
 msgid "no FX"
-msgstr ""
+msgstr "ingen FX"
 
 #. A track which isn't a folder.
 msgid "track"
-msgstr ""
+msgstr "spor"
 
 msgid "1st watcher"
-msgstr ""
+msgstr "1. overvåker"
 
 msgid "2nd watcher"
-msgstr ""
+msgstr "2. overvåker"
 
 msgid "1st chan"
-msgstr ""
+msgstr "1. kanal"
 
 msgid "2nd chan"
-msgstr ""
+msgstr "2. kanal"
 
 msgid "peak dB"
-msgstr ""
+msgstr "topp dB"
 
 msgid "integrated LUFS"
-msgstr ""
+msgstr "integrerte LUFS"
 
 msgid "momentary LUFS"
-msgstr ""
+msgstr "momentan LUFS"
 
 msgid "short term LUFS"
-msgstr ""
+msgstr "kortsiktige LUFS"
 
 msgid "loudness range LU"
-msgstr ""
+msgstr "lydstyrkeområde LU"
 
 msgid "integrated RMS"
-msgstr ""
+msgstr "integrert RMS"
 
 msgid "momentary RMS"
-msgstr ""
+msgstr "momentan RMS"
 
 msgid "true peak dBTP"
-msgstr ""
+msgstr "sann topp dBTP"
 
 msgid "gain reduction dB"
-msgstr ""
+msgstr "gainreduksjon dB"
 
 msgid "not configured"
-msgstr ""
+msgstr "ikke konfigurert"
 
 msgid "following last touched track"
-msgstr ""
+msgstr "etter sist berørte spor"
 
 msgid "threshold"
-msgstr ""
+msgstr "terskel"
 
 #. Reported when the user tries to reset a Peak Watcher
 #. value, but that watcher is disabled.
 #. Reported when the user tries to report a Peak Watcher
 #. channel, but the Peak Watcher value is disabled.
 msgid "watcher disabled"
-msgstr ""
+msgstr "overvåker skrudd av"
 
 #. Reported when the user resets a Peak Watcher value.
 msgid "reset"
-msgstr ""
+msgstr "nullstill"
 
 msgctxt "Peak Watcher"
 msgid "Peak Watcher"
-msgstr ""
+msgstr "Toppvakt"
 
 #. Reported when the user tries to report a Peak Watcher
 #. channel, but the Peak Watcher is paused.
 msgid "Peak Watcher paused"
-msgstr ""
+msgstr "Toppvakt pauset"
 
 msgid "Peak Watcher does not support the current focus"
-msgstr ""
+msgstr "Toppvakt støtter ikke gjeldende fokus"
 
 #. Used when asking which Peak Watcher value to configure.
 #. {} will be replaced with the value number; e.g. "Value &2".
 #. After this, information about the existing configuration for the value
 #. will be appended.
 msgid "paused Peak Watcher"
-msgstr ""
+msgstr "pauset toppvakt"
 
 msgid "resumed Peak Watcher"
-msgstr ""
+msgstr "gjenopptok toppvakt"
 
 msgid "Peak Watcher not enabled"
-msgstr ""
+msgstr "Toppvakt ikke skrudd på"
 
 #. Used when reporting a length of time in measures.
 #. {} will be replaced with the number of measures; e.g.
 #. "2 bars".
 msgid "{} bar"
 msgid_plural "{} bars"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} takt"
+msgstr[1] "{} takter"
 
 #. Used when reporting the measure of a time position.
 #. {} will be replaced with the measure number; e.g. "bar 2".
 msgid "bar {}"
-msgstr ""
+msgstr "takt {}"
 
 #. Used when reporting a length of time in beats.
 #. {} will be replaced with the number of beats; e.g. "2 beats".
 msgid "{} beat"
 msgid_plural "{} beats"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} slag"
+msgstr[1] "{} slag"
 
 #. Used when reporting the beat of a time position.
 #. {} will be replaced with the beat number; e.g. "beat 2".
 msgid "beat {}"
-msgstr ""
+msgstr "slag {}"
 
 #. used when reporting a time in ticks. {} will be replaced
 #. with the number of ticks; e.g. "2 ticks".
 msgid "{} tick"
 msgid_plural "{} ticks"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} tick"
+msgstr[1] "{} ticks"
 
 #. Used when reporting a time in minutes. {} will be
 #. replaced with the number of minutes; e.g. "2 min".
 msgid "{} min"
-msgstr ""
+msgstr "{} min"
 
-#. Used when reporting a time in seconds. {:.3f} will be
+#. Used when reporting a time in seconds. {} will be replaced
+#. with the number of seconds; e.g. "2 sec".
+#. Used when reporting a time in seconds. {} will be replaced
+#. with the number of seconds; e.g. "2 sec".
+#. Used when reporting a time in whole seconds. {} will be
 #. replaced with the number of seconds; e.g. "2 sec".
-msgid "{:#.3f} sec"
-msgstr ""
-
-#. Used when reporting a time in seconds. {:.3f} will be
+#. Used when reporting a time in seconds. {} will be
 #. replaced with the number of seconds; e.g. "2 sec".
-msgid "{:.3f} sec"
-msgstr ""
+msgid "{} sec"
+msgstr "{} sek"
 
 #. Used when reporting a time in frames. {} will be
 #. replaced with the number of frames; e.g. "2 frames".
 msgid "{} frame"
 msgid_plural "{} frames"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} frame"
+msgstr[1] "{} frames"
 
 #. used when reporting a time in hours. {} will be replaced
 #. with the number of hours; e.g. "2 hours".
 msgid "{} hour"
 msgid_plural "{} hours"
-msgstr[0] ""
-msgstr[1] ""
-
-#. Used when reporting a time in seconds. {} will be
-#. replaced with the number of seconds; e.g. "2 sec".
-msgid "{} sec"
-msgstr ""
+msgstr[0] "{} time"
+msgstr[1] "{} timer"
 
 #. Used when reporting a time in samples. {} will be replaced
 #. with the number of samples; e.g. "2 samples".
 msgid "{} samples"
-msgstr ""
+msgstr "{} sampler"
+
+#. Used when reporting a time in milliseconds. {} will be
+#. replaced with the number of ms; e.g. "2 ms".
+msgid "{} ms"
+msgstr "{} ms"
 
 #. A track which is a nested folder.
 msgid "nested folder"
-msgstr ""
+msgstr "undermappe"
 
 #. A track which is a folder.
 msgid "folder"
-msgstr ""
+msgstr "mappe"
 
 #. A track which ends its folder.
 msgid "end of folder"
-msgstr ""
+msgstr "slutt på mappe"
 
 #. An open track folder.
 msgid "open"
-msgstr ""
+msgstr "åpen"
 
 #. An open (but small visually) track folder.
 msgid "small"
-msgstr ""
+msgstr "liten"
 
 #. A closed track folder.
 msgid "closed"
-msgstr ""
+msgstr "lukket"
+
+#. An automation mode.
+msgctxt "automation mode"
+msgid "none"
+msgstr "ingen"
 
 #. An automation mode.
 msgid "trim/read"
-msgstr ""
+msgstr "trim/read"
 
 #. An automation mode.
 msgid "read"
-msgstr ""
+msgstr "read"
 
 #. An automation mode.
 msgid "touch"
-msgstr ""
+msgstr "touch"
 
 #. An automation mode.
 msgid "write"
-msgstr ""
+msgstr "write"
 
 #. An automation mode.
 msgid "latch"
-msgstr ""
+msgstr "latch"
 
 #. An automation mode.
 msgid "latch preview"
-msgstr ""
+msgstr "latch-forhåndsvisning"
 
 #. An automation mode.
 msgid "bypass"
-msgstr ""
+msgstr "omgå"
 
 #. An automation mode OSARA doesn't know about.
 #. A recording mode OSARA doesn't know about.
 msgid "unknown"
-msgstr ""
+msgstr "ukjent"
 
 #. A recording mode.
 msgid "input"
-msgstr ""
+msgstr "inngang"
 
 #. A recording mode.
 msgid "output (stereo)"
-msgstr ""
+msgstr "utgang (stereo)"
 
 #. A recording mode.
 msgid "output (stereo, latency compensated)"
-msgstr ""
+msgstr "utgang (stereo, latenskompensert)"
 
 #. A recording mode.
 msgid "output (midi)"
-msgstr ""
+msgstr "utgang (midi)"
 
 #. A recording mode.
 msgid "output (mono)"
-msgstr ""
+msgstr "utgang (mono)"
 
 #. A recording mode.
 msgid "output (mono, latency compensated)"
-msgstr ""
+msgstr "utgang (mono, latenskompensert)"
 
 #. A recording mode.
 msgid "midi overdub"
-msgstr ""
+msgstr "midi overdub"
 
 #. A recording mode.
 msgid "midi replace"
-msgstr ""
+msgstr "midi erstatt"
 
 #. A recording mode.
 msgid "midi touch-replace"
-msgstr ""
+msgstr "midi touch-erstatt"
 
 #. A recording mode.
 msgid "midi latch-replace"
-msgstr ""
+msgstr "midi latch-erstatt"
 
 msgid "volume lead"
-msgstr ""
+msgstr "volum leder"
 
 msgid "volume follow"
-msgstr ""
+msgstr "volum følger"
 
 msgid "VCA lead"
-msgstr ""
+msgstr "VCA leder"
 
 msgid "VCA follow"
-msgstr ""
+msgstr "VCA følger"
 
 msgid "pan lead"
-msgstr ""
+msgstr "pan leder"
 
 msgid "pan follow"
-msgstr ""
+msgstr "pan følger"
 
 msgid "width lead"
-msgstr ""
+msgstr "bredde leder"
 
 msgid "width follow"
-msgstr ""
+msgstr "bredde følger"
 
 msgid "mute lead"
-msgstr ""
+msgstr "demp leder"
 
 msgid "mute follow"
-msgstr ""
+msgstr "demp følger"
 
 msgid "solo lead"
-msgstr ""
+msgstr "solo leder"
 
 msgid "solo follow"
-msgstr ""
+msgstr "solo følger"
 
 msgid "record arm lead"
-msgstr ""
+msgstr "aktivert for opptak leder"
 
 msgid "record arm follow"
-msgstr ""
+msgstr "aktivert for opptak følger"
 
 msgid "polarity lead"
-msgstr ""
+msgstr "polaritet leder"
 
 msgid "polarity follow"
-msgstr ""
+msgstr "polaritet følger"
 
 msgid "automation mode lead"
-msgstr ""
+msgstr "automasjonsmodus leder"
 
 msgid "automation mode follow"
-msgstr ""
+msgstr "automasjonsmodus følger"
 
 msgid "reverse volume"
-msgstr ""
+msgstr "omvendt volum"
 
 msgid "reverse pan"
-msgstr ""
+msgstr "omvendt pan"
 
 msgid "reverse width"
-msgstr ""
+msgstr "omvendt bredde"
 
 msgid "do not lead when following"
-msgstr ""
+msgstr "ikke lede dersom den følger"
 
 msgid "VCA pre-FX follow"
+msgstr "VCA pre-FX følger"
+
+#. The decimal point symbol.
+msgctxt "decimal"
+msgid "."
 msgstr ""
 
 msgid "grid whole"
-msgstr ""
+msgstr "rutenett hel"
 
 msgid "grid half"
-msgstr ""
+msgstr "rutenett halv"
 
 msgid "grid quarter"
-msgstr ""
+msgstr "rutenett firedel"
 
 msgid "grid quarter triplet"
-msgstr ""
+msgstr "rutenett firedelstriol"
 
 msgid "grid eighth"
-msgstr ""
+msgstr "rutenett åttendedel"
 
 msgid "grid eighth triplet"
-msgstr ""
+msgstr "rutenett åttendedelstriol"
 
 msgid "grid sixteenth"
-msgstr ""
+msgstr "rutenett sekstendedel"
 
 msgid "grid sixteenth triplet"
-msgstr ""
+msgstr "rutenett sekstendedelstriol"
 
 msgid "grid thirty second"
-msgstr ""
+msgstr "rutenett trettitodel"
 
 msgid "grid thirty second triplet"
-msgstr ""
+msgstr "rutenett trettitodelstriol"
 
 msgid "grid sixty fourth"
-msgstr ""
+msgstr "rutenett sekstifiredel"
 
 msgid "grid one hundred twenty eighth"
-msgstr ""
+msgstr "rutenett hundreogtjueåttedel"
 
 msgid "grid  unknown"
-msgstr ""
+msgstr "rutenett ukjent"
+
+#. Used when referring to a folder track in a movement message.
+#. {track} will be replaced with the name, number or both of the folder track.
+#. {folderType} will be replaced with "folder" or "nested folder".
+msgid "{track} {folderType}"
+msgstr "{track} {folderType}"
+
+#. Used to report the folder containing a track after it has moved.
+#. {folder} will be replaced with the name, number or both of the folder.
+#. {folderType} will be replaced with "folder" or "nested folder".
+msgid "inside {folder} {folderType}"
+msgstr "inni {folder}{folderType}"
+
+#. Reported when moving a track upward.
+#. {track} will be replaced with a track reference; e.g. "vocal",
+#. "3", "3 vocal", "drums folder" or "3 drums nested folder".
+msgid "above {track}"
+msgstr "over {track}"
+
+#. Reported when moving a track downward.
+#. {track} will be replaced with a track reference; e.g. "vocal",
+#. "3", "3 vocal", "drums folder" or "3 drums nested folder".
+msgid "below {track}"
+msgstr "under {track}"
+
+#. Reported when moving a track upward inside a folder.
+#. {folder} will be replaced with a folder reference; e.g.
+#. "drums folder" or "3 drums nested folder".
+#. {track} will be replaced with the name, number or both of the nearby track.
+#. e.g. "inside drums folder, below snare" or "inside 3 drums nested folder, below 5"
+msgid "{folder}, below {track}"
+msgstr "{folder}, under {track}"
+
+#. Reported when moving a track downward inside a folder.
+#. {folder} will be replaced with a folder reference; e.g.
+#. "drums folder" or "3 drums nested folder".
+#. {track} will be replaced with the name, number or both of the nearby track.
+#. e.g. "inside drums folder, above snare" or "inside 3 drums nested folder, above 5"
+msgid "{folder}, above {track}"
+msgstr "{folder}, over {track}"
 
 msgid "defeating solo"
-msgstr ""
+msgstr "overstyrer solo"
 
 msgid "phase inverted"
-msgstr ""
+msgstr "fasevendt"
 
 msgid "FX bypassed"
-msgstr ""
+msgstr "FX omgått"
+
+msgid "frozen"
+msgstr "fryst"
 
 #. Reported when navigating to a track which is grouped.
 msgid "grouped"
-msgstr ""
+msgstr "gruppert"
 
 #. Reported when navigating to a track which has track notes.
 msgid "notes"
-msgstr ""
+msgstr "notater"
 
 #. Reported when navigating tracks to indicate how many items
 #. the track has. {} will be replaced by the number of items; e.g.
 #. "2 items".
-#. Reported when items are added. Other things might be added
-#. at the same time (e.g. tracks), so other messages may surround this.
-#. {} will be replaced with the number of items; e.g. "2 items".
 msgid "{} item"
 msgid_plural "{} items"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} objekt"
+msgstr[1] "{} objekter"
 
 msgid "free item positioning"
-msgstr ""
+msgstr "fri objektplassering"
 
 #. Reported when navigating tracks before listing the effects on
 #. the track.
 #. Reported when switching takes before listing the effects on
 #. the take.
 msgid "FX:"
-msgstr ""
+msgstr "FX:"
 
 msgid "delta"
-msgstr ""
+msgstr "delta"
 
 msgid "master muted"
-msgstr ""
+msgstr "hovedspor dempet"
 
 msgid "master unmuted"
-msgstr ""
+msgstr "hovedspor ikke dempet"
 
 msgid "no selected tracks"
-msgstr ""
+msgstr "ingen valgte spor"
 
 #. Reported when multiple tracks are muted. {} will be replaced
 #. with the number of tracks; e.g. "2 tracks muted".
 msgid "{} track muted"
 msgid_plural "{} tracks muted"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} spor dempet"
+msgstr[1] "{} spor dempet"
 
 #. Reported when multiple tracks are unmuted. {} will be
 #. replaced with the number of tracks; e.g. "2 tracks unmuted".
 msgid "{} track unmuted"
 msgid_plural "{} tracks unmuted"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "demping av for {} spor"
+msgstr[1] "demping av for {} spor"
 
 msgid "master soloed"
-msgstr ""
+msgstr "hovedspor i solo"
 
 msgid "master unsoloed"
-msgstr ""
+msgstr "hovedspor ikke i solo"
 
 #. Reported when multiple tracks are soloed. {} will be replaced
 #. with the number of tracks; e.g. "2 tracks soloed".
 msgid "{} track soloed"
 msgid_plural "{} tracks soloed"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} spor i solo"
+msgstr[1] "{} spor i solo"
 
 #. Reported when multiple tracks are unsoloed. {} will be
 #. replaced with the number of tracks; e.g. "2 tracks unsoloed".
 msgid "{} track unsoloed"
 msgid_plural "{} tracks unsoloed"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "solo av for {} spor"
+msgstr[1] "solo av for {} spor"
+
+#. Reported when multiple tracks are armed. {} will be replaced
+#. with the number of tracks; e.g. "2 tracks armed".
+msgid "{} track armed"
+msgid_plural "{} tracks armed"
+msgstr[0] "{} spor klar for opptak"
+msgstr[1] "{} spor klare for opptak"
+
+#. Reported when multiple tracks are unarmed. {} will be
+#. replaced with the number of tracks; e.g. "2 tracks unarmed".
+msgid "{} track unarmed"
+msgid_plural "{} tracks unarmed"
+msgstr[0] "opptak av for {} spor"
+msgstr[1] "opptak av for {} spor"
 
 msgid "record monitor off"
-msgstr ""
+msgstr "innspillingslytting av"
 
 #. Record monitor set to normal.
 msgctxt "record monitor"
 msgid "normal"
-msgstr ""
+msgstr "normal"
 
 #. Record monitor set to not when playing.
 msgid "not when playing"
-msgstr ""
+msgstr "ikke under avspilling"
 
 msgid "phase normal"
-msgstr ""
+msgstr "normal fase"
 
 #. Reported when multiple tracks have phase inverted. {} will be
 #. replaced with the number of tracks; e.g. "2 tracks phase inverted".
 msgid "{} track phase inverted"
 msgid_plural "{} tracks phase inverted"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} spor fasevendt"
+msgstr[1] "{} spor fasevendt"
 
 #. Reported when multiple tracks have phase normal. {} will be
 #. replaced with the number of tracks; e.g. "2 tracks phase normal".
 msgid "{} track phase normal"
 msgid_plural "{} tracks phase normal"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} spor med normalfase"
+msgstr[1] "{} spor med normalfase"
 
 msgid "FX active"
-msgstr ""
+msgstr "FX aktiv"
 
 msgid "all tracks FX bypassed"
-msgstr ""
+msgstr "alle spor-FX forbigått"
 
 msgid "all tracks FX active"
-msgstr ""
+msgstr "alle spor-FX aktive"
 
 msgid "enabled delta solo"
-msgstr ""
+msgstr "aktivert delta-solo"
 
 msgid "disabled delta solo"
-msgstr ""
+msgstr "deaktivert delta-solo"
+
+#. Used when the start offset for looped or one-shot segment is exactly 0. The audible segment starts from the edit cursor position.
+msgid "start from cursor"
+msgstr "start fra markør"
+
+#. Used when the start offset is anything other than 0, could be a positive or negative number measured in milliseconds.
+#. {} will be replaced with a number of milliseconds. E.g., "start offset -100 MS".
+msgid "start offset {} MS"
+msgstr "startforskyvning {} MS"
+
+#. Used when the end offset for looped or one-shot segment is exactly 0. The audible segment ends at the edit cursor position.
+msgid "end at cursor"
+msgstr "slutt ved markør"
+
+#. Used when the end offset is anything other than 0, could be a positive or negative number measured in milliseconds.
+#. {} will be replaced with a number of milliseconds. E.g., "end offset 100 MS".
+msgid "end offset {} MS"
+msgstr "sluttforskyvning {} MS"
 
 msgid "no selected items"
-msgstr ""
+msgstr "ingen valgte elementer"
 
 #. {} will be replaced with the number of items; e.g.
 #. "2 items normalized to common gain".
 msgid "{} item normalized to common gain"
 msgid_plural "{} items normalized to common gain"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} objekt normalisert til felles gain"
+msgstr[1] "{} objekter normalisert til felles gain"
+
+#. {} will be replaced with the number of items; e.g.
+#. "2 items un-normalized".
+msgid "{} item un-normalized"
+msgid_plural "{} items un-normalized"
+msgstr[0] "{} objekt av-normalisert"
+msgstr[1] "{} objekt av-normalisert"
 
 #. {} will be replaced with the number of items; e.g.
 #. "2 items normalized".
 msgid "{} item normalized"
 msgid_plural "{} items normalized"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} objekt normalisert"
+msgstr[1] "{} objekter normalisert"
 
 msgid "not a folder"
-msgstr ""
+msgstr "ikke en mappe"
 
 #. Reported when moving to the start of a named region. {}
 #. will be replaced with the region's name; e.g. "intro region start".
 msgid "{} region start"
-msgstr ""
+msgstr "{} region start"
 
 #. Reported when moving to the start of an unnamed region.
 #. {} will be replaced with the region's number; e.g.
 #. "region 2 start".
 msgid "region {} start"
-msgstr ""
+msgstr "region {} start"
 
 #. Reported when moving to the end of a named region. {}
 #. will be replaced with the region's name; e.g. "intro region end".
 msgid "{} region end"
-msgstr ""
+msgstr "{} region slutt"
 
 #. Reported when moving to the end of an unnamed region.
 #. {} will be replaced with the region's number; e.g.
 #. "region 2 end".
 msgid "region {} end"
-msgstr ""
+msgstr "region {} slutt"
 
 #. Reported when moving by marker and the cursor lands at the
 #. start of the time selection.
 msgid "selection start"
-msgstr ""
+msgstr "start for tidsutvalg"
 
 #. Reported when moving by marker and the cursor lands at the
 #. end of the time selection.
 msgid "selection end"
-msgstr ""
+msgstr "slutt for tidsutvalg"
 
 #. Reported when moving by marker and the cursor lands at the
 #. loop start point.
 msgid "loop start"
-msgstr ""
+msgstr "sløyfestart"
 
 #. Reported when moving by marker and the cursor lands at the
 #. loop end point.
 msgid "loop end"
-msgstr ""
+msgstr "sløyfeslutt"
 
 msgid "Track"
-msgstr ""
+msgstr "Spor"
 
+#. An entry in OSARA's context menu for analyzing loudness statistics.
 msgid "Master"
-msgstr ""
+msgstr "Hoved"
 
 msgid "Item"
-msgstr ""
+msgstr "Objekt"
 
 msgid "Take"
-msgstr ""
+msgstr "Tagning"
 
 #. {} will be replaced with the number of items; e.g.
 #. "2 items faded in to cursor".
 msgid "{} item faded in to cursor"
 msgid_plural "{} items faded in to cursor"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} objekt tonet inn til markør"
+msgstr[1] "{} objekter tonet inn til markør"
 
 #. {} will be replaced with the number of items; e.g.
 #. "2 items faded out from cursor".
 msgid "{} item faded out from cursor"
 msgid_plural "{} items faded out from cursor"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} objekt tonet ut fra markør"
+msgstr[1] "{} objekter tonet ut fra markør"
 
 #. Panned to the center.
 msgid "center"
-msgstr ""
+msgstr "senter"
 
-#. Panned to the left. {:g} will be replaced with the amount;
+#. Panned to the left. {} will be replaced with the amount;
 #. e.g. "20% left".
-msgid "{:g}% left"
+msgid "{}% left"
 msgstr ""
 
-#. Panned to the right. {:g} will be replaced with the amount;
+#. Panned to the right. {} will be replaced with the amount;
 #. e.g. "20% right".
-msgid "{:g}% right"
+msgid "{}% right"
 msgstr ""
 
 msgid "ripple per-track"
-msgstr ""
+msgstr "ringvirkning per spor"
 
 msgid "ripple all tracks"
-msgstr ""
+msgstr "ringvirkning alle spor"
 
 msgid "ripple off"
-msgstr ""
+msgstr "ringvirkning skrudd av"
 
-#. This message will be appended when removing or pasting items with ripple per-track or ripple all tracks enabled; E.G.
-#. "2 items removed ripple is on".
-msgid "ripple is on"
-msgstr ""
+#. This message will be appended when duplicating, removing or pasting items with ripple per-track  enabled; E.G.
+#. "2 items removed ripple per track is on".
+msgid "ripple per track is on"
+msgstr "ringvirkning per spor er på"
+
+#. This message will be appended when duplicating, removing or pasting items with  ripple all tracks enabled; E.G.
+#. "1 item added ripple all tracks is on".
+msgid "ripple all tracks is on"
+msgstr "ringvirkning alle spor er på"
+
+#. Reported when auto crossfade and trim content behind media items are both enabled.
+msgid "enabled auto crossfades and trim"
+msgstr "aktiverte autokrysstoninger og trim"
+
+#. Reported when auto crossfade is enabled, trim behind media items is disabled.  
+msgid "crossfading, not trimming"
+msgstr "krysstoning, ikke trimming"
+
+#. Reported when trim content behind media items is enabled, auto crossfade is disabled.
+msgid "trimming, not crossfading"
+msgstr "trimming, ikke krysstoning"
+
+#. Reported when auto crosfade and trim content behind media items are both disabled.
+msgid "disabled auto crossfades and trim"
+msgstr "deaktivert autokrysstoninger og trim"
 
 msgid "repeat on"
-msgstr ""
+msgstr "gjenta på"
 
 msgid "repeat off"
-msgstr ""
+msgstr "gjenta av"
 
 msgid "no takes"
-msgstr ""
+msgstr "ingen tagninger"
 
 msgid "empty take lane"
-msgstr ""
+msgstr "tom tagningsbane"
 
 #. Reported when copying tracks. {} will be replaced with
 #. the number of tracks; e.g. "2 tracks copied".
 msgid "{} track copied"
 msgid_plural "{} tracks copied"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} spor kopiert"
+msgstr[1] "{} spor kopiert"
 
 #. Reported when copying items. {} will be replaced with
 #. the number of items; e.g. "2 items copied".
 msgid "{} item copied"
 msgid_plural "{} items copied"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} objekt kopiert"
+msgstr[1] "{} objekter kopiert"
 
 #. Reported when copying the content of a time selection to the edit cursor.
 msgid "copied time selection to edit cursor"
-msgstr ""
+msgstr "kopierte tidsutvalg til redigeringsmarkør"
 
 #. Reported when moving the content of a time selection to edit cursor.
 msgid "moved time selection to edit cursor"
-msgstr ""
+msgstr "flyttet tidsutvalg til redigeringsmarkør"
 
 #. Reported when moving to a tempo change. {} will be replaced
 #. with the tempo in bpm; e.g. "tempo 100".
 msgid "tempo {}"
-msgstr ""
+msgstr "tempo {}"
 
 #. Reported when moving to a time signature change. {num} will
 #. be replaced with the time signature numerator. {denom} will be replaced
 #. with the time signature denominator. For example: "time sig 6/8".
 msgid "time sig {num}/{denom}"
-msgstr ""
+msgstr "taktart {num}/{denom}"
 
 #. Reported when moving to a stretch marker.
 msgid "stretch marker"
-msgstr ""
+msgstr "strekkmarkør"
 
 msgid "metronome on"
-msgstr ""
+msgstr "metronom på"
 
 msgid "metronome off"
-msgstr ""
+msgstr "metronom av"
 
 msgid "master track visible"
-msgstr ""
+msgstr "hovedspor synlig"
 
 msgid "master track hidden"
-msgstr ""
+msgstr "hovedspor skjult"
 
 msgid "pause"
-msgstr ""
+msgstr "pause"
 
 msgid "record"
-msgstr ""
+msgstr "ta opp"
 
 msgid "play"
-msgstr ""
+msgstr "spill av"
 
 msgid "stop"
-msgstr ""
+msgstr "stopp"
 
 #. Reported when items are selected. {} will be replaced with
 #. the number of items; e.g. "2 items selected".
@@ -1789,179 +2022,211 @@ msgstr ""
 #. number of selected items; e.g. "2 items selected".
 msgid "{} item selected"
 msgid_plural "{} items selected"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} objekt valgt"
+msgstr[1] "{} objekter valgt"
 
 #. {} will be replaced with the number of items; e.g.
 #. "2 items quantized".
 msgid "{} item quantized"
 msgid_plural "{} items quantized"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} objekt kvantisert"
+msgstr[1] "{} objekter kvantisert"
 
 msgid "no items selected"
-msgstr ""
+msgstr "ingen objekter valgt"
 
 #. Reported when moving items up. {} will be replaced by the
 #. number of items; e.g. "2 items moved up".
 msgid "{} item moved up"
 msgid_plural "{} items moved up"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} objekt flyttet opp"
+msgstr[1] "{} objekter flyttet opp"
 
 #. Reported when moving items down. {} will be replaced by the
 #. number of items; e.g. "2 items moved".
 msgid "{} item moved down"
 msgid_plural "{} items moved down"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} objekt flyttet ned"
+msgstr[1] "{} objekter flyttet ned"
 
 #. Reported when prompting for the name of a track.
 msgid "Track name"
-msgstr ""
+msgstr "Spornavn"
 
 #. Reported when multiple items are muted. {} will be replaced
 #. with the number of items; e.g. "2 items muted".
 msgid "{} item muted"
 msgid_plural "{} items muted"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} objekt dempet"
+msgstr[1] "{} objekter dempet"
 
 #. Reported when multiple items are unmuted. {} will be
 #. replaced with the number of items; e.g. "2 items unmuted".
 msgid "{} item unmuted"
 msgid_plural "{} items unmuted"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "demping av for {} objekt"
+msgstr[1] "demping av for {} objekter"
 
 #. Reported when multiple items are soloed. {} will be replaced
 #. with the number of items; e.g. "2 items soloed".
 msgid "{} item soloed"
 msgid_plural "{} items soloed"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} objekt i solo"
+msgstr[1] "{} objekter i solo"
 
 #. Reported when multiple items are unsoloed. {} will be
 #. replaced with the number of items; e.g. "2 items unsoloed".
 msgid "{} item unsoloed"
 msgid_plural "{} items unsoloed"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} objekt ikke i solo"
+msgstr[1] "{} objekter ikke i solo"
 
 #. Reported when an action is used to lock an item.
 #. Used when navigating items to indicate that an item is
 #. locked.
 msgid "locked"
-msgstr ""
+msgstr "låst"
 
 #. Reported when an action is used to unlock an item.
 msgid "unlocked"
-msgstr ""
+msgstr "ulåst"
 
 #. Reported when multiple items are locked. {} will be replaced
 #. with the number of items; e.g. "2 items locked".
 msgid "{} item locked"
 msgid_plural "{} items locked"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} objekt låst"
+msgstr[1] "{} objekter låst"
 
 #. Reported when multiple items are unlocked. {} will be
 #. replaced with the number of items; e.g. "2 items unlocked".
 msgid "{} item unlocked"
 msgid_plural "{} items unlocked"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} objekt ulåst"
+msgstr[1] "{} objekter ulåst"
+
+#. Reported when an action is used to enable loop source for an item.
+msgid "enabled loop source"
+msgstr "skrudd på sløyfekilde"
+
+#. Reported when an action is used to disable loopp source for an item.
+msgid "disabled loop source"
+msgstr "skrudd av sløyfekilde"
+
+#. Reported when loop source is enabled for multiple items. {} will be replaced
+#. with the number of items; e.g. "2 items enabled lloop source".
+msgid "{} item enabled loop source"
+msgid_plural "{} items enabled loop source"
+msgstr[0] "{} objekt skrudd på sløyfekilde"
+msgstr[1] "{} objekter skrudd på sløyfekilde"
+
+#. Reported when loop source is disabled for multiple items. {} will be
+#. replaced with the number of items; e.g. "2 items disabled loop source".
+msgid "{} item disabled loop source"
+msgid_plural "{} items disabled loop source"
+msgstr[0] "{} objekt skrudd av sløyfekilde"
+msgstr[1] "{} objekter skrudd av sløyfekilde"
+
+#. This is reported when users or REAPER automatically selects from the start of project to the cursor.
+msgid "selected from start of project to cursor"
+msgstr "valgt fra start av prosjektet til markør"
 
 msgid "set selection end"
-msgstr ""
+msgstr "angi slutt for utvalg"
 
 msgid "master mono"
-msgstr ""
+msgstr "hovedmono"
 
 msgid "master stereo"
-msgstr ""
+msgstr "hovedsterero"
 
 msgid "crossfade on"
-msgstr ""
+msgstr "krysstoning på"
 
 msgid "crossfade off"
-msgstr ""
+msgstr "krysstoning av"
+
+msgid "trim behind items on"
+msgstr "beskjær bak objekter på"
+
+msgid "trim behind items off"
+msgstr "beskjær bak objekter av"
 
 msgid "locking on"
-msgstr ""
+msgstr "lås på"
 
 msgid "locking off"
-msgstr ""
+msgstr "lås av"
 
 msgid "solo in front"
-msgstr ""
+msgstr "fremhevet solo"
 
 #. Solo in front was turned off.
 msgid "normal solo"
-msgstr ""
+msgstr "normal solo"
 
 #. Reported when the play rate is adjusted. {} will be replaced
 #. with the play rate; e.g. "1.5 play rate".
 msgid "{} play rate"
-msgstr ""
+msgstr "{} avspillingshastighet"
 
 msgid "fx active"
-msgstr ""
+msgstr "fx aktiv"
 
 #. Record mode set to normal.
 msgid "normal record"
-msgstr ""
+msgstr "normalinnspilling"
 
 msgid "selected item auto-punch"
-msgstr ""
+msgstr "auto-innhopp for valgt objekt"
 
 msgid "time selection auto-punch"
-msgstr ""
+msgstr "auto-innhopp for tidsutvalg"
 
 #. When changing the global automation override, reported prior
 #. to the chosen automation mode.
 msgid "override"
-msgstr ""
+msgstr "overstyr"
 
 #. Reported when reversing takes. {} will be replaced by the
 #. number of takes; e.g. "2 takes reversed".
 msgid "{} take reversed"
 msgid_plural "{} takes reversed"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} tagning vendt om"
+msgstr[1] "{} tagninger vendt om"
 
 msgid "enabled pre roll before recording"
-msgstr ""
+msgstr "skrudde på foravspilling før opptak"
 
 msgid "disabled pre roll before recording"
-msgstr ""
+msgstr "skrudde av foravspilling før opptak"
 
 msgid "enabled count in before recording"
-msgstr ""
+msgstr "skrudde på opptelling før opptak"
 
 msgid "disabled count in before recording"
-msgstr ""
+msgstr "skrudde av opptelling før opptak"
 
 #. A take channel mode.
 msgctxt "take channel mode"
 msgid "normal"
-msgstr ""
+msgstr "normal"
 
 #. A take channel mode.
 msgid "mono (left)"
-msgstr ""
+msgstr "mono (venstre)"
 
 #. A take channel mode.
 msgid "mono (downmix)"
-msgstr ""
+msgstr "mono (nedmiks)"
 
 #. A take channel mode.
 msgid "mono (right)"
-msgstr ""
+msgstr "mono (høyre)"
 
 #. A take channel mode OSARA doesn't know about.
 msgid "unknown mode"
-msgstr ""
+msgstr "ukjent modus"
 
 #. Reported when setting the channel mode of takes.
 #. {count} will be replaced with the number of takes affected.
@@ -1969,1191 +2234,1421 @@ msgstr ""
 #. For example: "set 2 takes to mono (left)"
 msgid "set {count} take to {mode}"
 msgid_plural "set {count} takes to {mode}"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "angi {count} tagning til {mode}"
+msgstr[1] "angi {count} tagninger til {mode}"
 
 #. Reported when changing the tempo. {} will be replaced with
 #. the new tempo; e.g. "50 bpm".
 msgid "{} bpm"
-msgstr ""
+msgstr "{} bpm"
 
 msgid "enabled playback position follows project timebase when changing tempo"
-msgstr ""
+msgstr "skrudd på avspillingsposisjon følger prosjekt-tidsbase når tempo endres"
 
 msgid "disabled playback position follows project timebase when changing tempo"
-msgstr ""
+msgstr "skrudd av avspillingsposisjon følger prosjekt-tidsbase når tempo endres"
 
 msgid "preserving pitch when changing play rate"
-msgstr ""
+msgstr "behold tonehøyde når avspillingshastighet endres"
 
 msgid "not preserving pitch when changing play rate"
-msgstr ""
+msgstr "ikke behold tonehøyde når avspillingshastighet endres"
 
 #. Reported when setting the ends of multiple items to the end
 #. of their source media. {} will be replaced with the number of items; e.g.
 #. "2 item ends set to source media end"
 msgid "{} item ends set to source media end"
-msgstr ""
+msgstr "{} objektavslutninger satt til slutt på kildemediet"
 
 #. Reported when setting the end of a single item to its source
 #. media end. {} will be replaced with the end time; e.g.
 #. "item end set to source media end: bar 3 beat 1 25%"
 msgid "item end set to source media end: {}"
-msgstr ""
+msgstr "objektavslutning satt til slutt på kildemediet: {}"
 
 #. Reported when trimming items to selected area. {} will be replaced by the
 #. number of items; e.g. "2 items trimmed".
 msgid "{} item trimmed"
 msgid_plural "{} items trimmed"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} objekt beskjært"
+msgstr[1] "{} objekter beskjært"
 
 #. Reported when moving to a take marker. {} will be
 #. replaced with the name of the marker; e.g. "fix take marker".
 msgid "{} take marker"
-msgstr ""
+msgstr "{} tagningsmarkør"
 
 #. Reported when an action selects tracks. {} will be replaced
 #. with the number of tracks; e.g. "2 tracks selected".
 msgid "{} track selected"
 msgid_plural "{} tracks selected"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} spor valgt"
+msgstr[1] "{} spor valgt"
 
 msgid "not defeating solo"
-msgstr ""
+msgstr "overstyrer ikke solo"
 
-#. report transient sensitivity. {:g} is replaced with the sensitivity percentage;
+#. report transient sensitivity. {} is replaced with the sensitivity percentage;
 #. E.g. "13% sensitivity"
-msgid "{:g}% sensitivity"
+msgid "{}% sensitivity"
 msgstr ""
 
 #. Reported when changing the transient detection threshold.
-#. {:g} will be replaced with the threshold; e.g. "{} dB threshold".
-msgid "{:g} dB threshold"
+#. {} will be replaced with the threshold; e.g. "{} dB threshold".
+msgid "{} dB threshold"
 msgstr ""
 
 msgid "enabled envelope points move with media items"
-msgstr ""
+msgstr "skrudde på kurvepunkter flyttes med medieobjekter"
 
 msgid "disabled envelope points move with media items"
-msgstr ""
+msgstr "skrudde av kurvepunkter flyttes med medieobjekter"
 
 msgid "enabled free item positioning"
-msgstr ""
+msgstr "skrudde på fri objektplassering"
 
 msgid "disabled free item positioning"
-msgstr ""
+msgstr "skrudde av fri objektplassering"
 
 #. Used when changing item rate. {} is replaced by the new rate. E.G. "1.0 item rate"
 msgid "{} item rate"
-msgstr ""
+msgstr "{} objekthastighet"
 
 #. Used when changing item PITCH. {} is replaced by the new PITCH. E.G. "-1.0 SEMITONES"
 msgid "{} semitones"
-msgstr ""
+msgstr "{} halvtoner"
 
 msgid "enabled preserve pitch when changing item rate"
-msgstr ""
+msgstr "skrudde på behold tonehøyde når objekthastighet endres"
 
 msgid "disabled preserve pitch when changing item rate"
-msgstr ""
+msgstr "skrudde av behold tonehøyde når objekthastighet endres"
 
 msgid "minimum vertical zoom"
-msgstr ""
+msgstr "minimum vertikal forstørrelse"
 
 msgid "small vertical zoom"
-msgstr ""
+msgstr "liten vertikal forstørrelse"
 
 msgid "medium vertical zoom"
-msgstr ""
+msgstr "medium vertikal forstørrelse"
 
 msgid "large vertical zoom"
-msgstr ""
+msgstr "stor vertikal forstørrelse"
 
 msgid "maximum vertical zoom"
-msgstr ""
+msgstr "maks vertikal forstørring"
 
 #. Used when reporting the vertical zoom level as a number.
 #. {} will be replaced with the number; e.g. "35 vertical zoom".
-#. Reported when using "Main action section: Momentarily set
-#. override to alt-1", etc. {} is replaced with the shortened section name;
-#. e.g. "alt-1 momentary".
+msgid "{} vertical zoom"
+msgstr "{} vertikal forstørring"
+
+msgid "recording key map"
+msgstr "tastesett for innspilling"
+
+msgid "main key map"
+msgstr "hovedtastesett"
+
+msgid "default momentary"
+msgstr "standard momentan"
+
+msgid "recording key map momentary"
+msgstr "momentant tastesett for innspilling"
+
+#. Reported when using "Main action section: Momentarily
+#. set override to alt-1", etc. {} is replaced with the shortened
+#. section name; e.g. "alt-1 momentary".
 msgid "{} momentary"
-msgstr ""
+msgstr "{} momentant"
 
 #. Reported when users run the "Reset all MIDI devices" action.
 msgid "midi devices reset"
-msgstr ""
+msgstr "tilbakestill midienheter"
 
 #. Reported when users run the "Reset all MIDI control surface devices" action.
 msgid "Control surfaces reset"
-msgstr ""
+msgstr "Tilbakestill kontrollflater"
 
 #. Reported when users run the "Send all-notes-off and all-sounds-off to all MIDI outputs/plug-ins" action.
 msgid "all notes off"
-msgstr ""
+msgstr "alle noter av"
+
+msgid "Octave up"
+msgstr "Oktav opp"
+
+msgid "Octave down"
+msgstr "Oktav ned"
+
+msgid "Increase MIDI channel"
+msgstr "Øk MIDI-kanal"
+
+msgid "Decrease MIDI channel"
+msgstr "Reduser MIDI-kanal"
 
 msgid "set selection start"
-msgstr ""
+msgstr "angi start for utvalg"
 
 msgid "set loop start"
-msgstr ""
+msgstr "angi start for sløyfe"
 
 msgid "set loop end"
-msgstr ""
+msgstr "angi slutt for sløyfe"
 
 msgid "all tracks unmuted"
-msgstr ""
+msgstr "ingen spor er dempet"
 
 msgid "all tracks unsoloed"
-msgstr ""
+msgstr "ingen spor er i solo"
 
 msgid "all tracks unarmed"
-msgstr ""
+msgstr "ingen spor aktivert for opptak"
 
 msgid "all delta solos reset"
-msgstr ""
+msgstr "alle deltasolo nullstilt"
 
 msgid "grid sixty forth"
-msgstr ""
+msgstr "rutenett sekstifirendedel"
 
 msgid "grid straight"
-msgstr ""
+msgstr "rutenett rett"
 
 msgid "grid dotted"
-msgstr ""
+msgstr "rutenett punktert"
 
 msgid "grid triplet"
-msgstr ""
+msgstr "rutenett triol"
 
 msgid "length whole"
-msgstr ""
+msgstr "lengde hel"
 
 msgid "length half"
-msgstr ""
+msgstr "lengde halv"
 
 msgid "length thirty second"
-msgstr ""
+msgstr "lengde trettitodel"
 
 msgid "length quarter"
-msgstr ""
+msgstr "lengde firedel"
 
 msgid "length quarter triplet"
-msgstr ""
+msgstr "lengde firedelstriol"
 
 msgid "length sixteenth"
-msgstr ""
+msgstr "lengde sekstendedel"
 
 msgid "length sixteenth triplet"
-msgstr ""
+msgstr "lengde sekstendedelstriol"
 
 msgid "length eighth"
-msgstr ""
+msgstr "lengde åttendedel"
 
 msgid "length eighth triplet"
-msgstr ""
+msgstr "lengde åttendedelstriol"
 
 msgid "length thirty second triplet"
-msgstr ""
+msgstr "lengde trettitodelstriol"
 
 msgid "length sixty forth"
-msgstr ""
+msgstr "lengde sekstifirendedel"
 
 msgid "length one hundred twenty eighth"
-msgstr ""
+msgstr "lengde hundreogtjueåttendedel"
 
 msgid "length straight"
-msgstr ""
+msgstr "lengde rett"
 
 msgid "length dotted"
-msgstr ""
+msgstr "lengde punktert"
 
 msgid "length triplet"
-msgstr ""
+msgstr "lengde triol"
 
 msgid "full screen"
-msgstr ""
+msgstr "fullskjerm"
 
 msgid "normal screen"
-msgstr ""
+msgstr "normalskjerm"
 
 msgid "showed Media Explorer"
-msgstr ""
+msgstr "viste medieutforsker"
 
 msgid "hid Media Explorer"
-msgstr ""
+msgstr "skjulte medieutforsker"
 
 msgid "absolute frames"
-msgstr ""
+msgstr "absolutte frames"
 
 msgid "hours:minutes:seconds:frames"
-msgstr ""
+msgstr "timer:minutter:sekunder:frames"
 
 msgid "measures.beats"
-msgstr ""
+msgstr "takter.slag"
 
 msgid "minutes:seconds"
-msgstr ""
+msgstr "minutter:sekunder"
 
 msgid "samples"
-msgstr ""
+msgstr "sampler"
 
 msgid "seconds"
-msgstr ""
+msgstr "sekunder"
 
 msgid "absolute frames secondary"
-msgstr ""
+msgstr "absolutte frames sekundært"
 
 msgid "hours:minutes:seconds:frames secondary"
-msgstr ""
+msgstr "timer:minutter:seconds:frames sekundært"
 
 msgid "minutes:seconds secondary"
-msgstr ""
+msgstr "minutter:sekunder sekundært"
 
 msgid "no secondary time unit"
-msgstr ""
+msgstr "ingen sekundær tidsenhet"
 
 msgid "samples secondary"
-msgstr ""
+msgstr "samples sekundært"
 
 msgid "seconds secondary"
-msgstr ""
+msgstr "sekunder sekundært"
 
 msgid "enabled snap"
-msgstr ""
+msgstr "fest til rutenett skrudd på"
 
 msgid "disabled snap"
-msgstr ""
-
-msgid "default key map"
-msgstr ""
-
-msgid "recording key map"
-msgstr ""
-
-msgid "default momentary"
-msgstr ""
-
-msgid "recording key map momentary"
-msgstr ""
+msgstr "fest til rutenett skrudd av"
 
 msgid "auto playing"
-msgstr ""
+msgstr "spiller av automatisk"
 
 msgid "not auto playing"
-msgstr ""
+msgstr "spiller ikke av automatisk"
 
 msgid "repeating previews"
-msgstr ""
+msgstr "gjentakende forhåndslytt"
 
 msgid "not repeating previews"
-msgstr ""
+msgstr "ikke-gjentakende forhåndslyttinger"
 
 msgid "starting on bar"
-msgstr ""
+msgstr "starter ved takt"
 
 msgid "not starting on bar"
-msgstr ""
+msgstr "starter ikke ved takt"
 
 msgid "preserving pitch"
-msgstr ""
+msgstr "behold tonehøyde"
 
 msgid "not preserving pitch"
-msgstr ""
+msgstr "ikke behold tonehøyde"
 
 msgid "reset pitch"
-msgstr ""
+msgstr "tilbakestill tonehøyde"
 
 msgid "tempo matching"
-msgstr ""
+msgstr "tempomatchende"
 
 msgid "not tempo  matching"
-msgstr ""
+msgstr "ikke tempomatchende"
 
 msgid "half time"
-msgstr ""
+msgstr "halv time"
 
 msgid "normal time"
-msgstr ""
+msgstr "normal time"
 
 msgid "double time"
-msgstr ""
+msgstr "dobbel time"
 
 msgid "docked Media Explorer"
-msgstr ""
+msgstr "dokket Medieutforsker"
 
 msgid "removed Media Explorer from dock"
-msgstr ""
+msgstr "fjernet Medieutforsker fra dokk"
 
 msgid "piano roll view"
-msgstr ""
+msgstr "visning av pianorull"
 
 msgid "named notes view"
-msgstr ""
+msgstr "visning av navngitte noter"
 
 msgid "event list view"
-msgstr ""
+msgstr "visning av hendelsesliste"
 
 msgid "notation view"
-msgstr ""
+msgstr "visning av notasjon"
 
 msgid "rectangle notes (normal)"
-msgstr ""
+msgstr "rektangelnoter (normal)"
 
 msgid "triangle notes"
-msgstr ""
+msgstr "triangelnoter"
 
 msgid "diamond notes"
-msgstr ""
+msgstr "rombenoter"
 
 msgid "showed velocity numbers on notes"
-msgstr ""
+msgstr "viste styrketall på noter"
 
 msgid "hid velocity numbers on notes"
-msgstr ""
+msgstr "skjulte styrketall på noter"
 
 msgid "showed note names"
-msgstr ""
+msgstr "viste notenavn"
 
 msgid "hid note names"
-msgstr ""
+msgstr "skjulte notenavn"
 
 msgid "length matching grid"
-msgstr ""
+msgstr "lengde samme som rutenett"
 
 #. Reported when there are no tracks to navigate to.
 msgid "no tracks"
-msgstr ""
+msgstr "ingen spor"
 
 msgid "Change Track Selection"
-msgstr ""
+msgstr "Endre sporvalg"
 
 msgid "Change Item Selection"
-msgstr ""
+msgstr "Endre objektvalg"
 
 #. Used when navigating items to indicate that an item is
 #. grouped. {} will be replaced with the group number; e.g. "group 1".
 msgid "group {}"
-msgstr ""
+msgstr "gruppe {}"
 
-#. Used when navigating items to indicate the number of
-#. takes. {} will be replaced with the number; e.g. "2 takes".
+#. Used when navigating items to indicate the number of takes, only if there is more than 1 take.
+#. {} will be replaced with the number of takes; e.g. "2 takes".
 msgid "{} takes"
-msgstr ""
+msgstr "{} tagninger"
+
+msgid "{}"
+msgstr "{}"
+
+msgid "+{}"
+msgstr "+{}"
+
+msgid "-{}"
+msgstr "-{}"
+
+msgid "{} per keypress"
+msgstr "{} per tastetrykk"
 
 #. Reported when undoing an action. {}
 #. will be replaced with the name of the action; e.g. "undo Remove tracks".
 msgid "undo {}"
-msgstr ""
+msgstr "angre {}"
 
 #. Reported when redoing an action. {}
 #. will be replaced with the name of the action; e.g. "redo Remove tracks".
 msgid "redo {}"
-msgstr ""
+msgstr "gjør om {}"
+
+#. Reported when there is not an item under the edit cursor to be split.
+msgid "no item at cursor"
+msgstr "ingen objekt ved markør"
+
+#. Reported when an item cannot be split because the cursor is already on its edge.
+msgid "already split at cursor"
+msgstr "allerede splittet ved markør"
 
 #. Reported when items are added. {} will be replaced with the
 #. number of items; e.g. "2 items added".
+#. Reported when items are added. {} will be replaced with
+#. the number of items; e.g. "2 items added".
 msgid "{} item added"
 msgid_plural "{} items added"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} objekt lagt til"
+msgstr[1] "{} objekter lagt til"
 
-#. Reported when tracks are added. Other things might be added
-#. at the same time (e.g. items), so other messages may surround this.
-#. {} will be replaced with the number of tracks; e.g. "2 tracks".
-msgid "{} track"
-msgid_plural "{} tracks"
-msgstr[0] ""
-msgstr[1] ""
-
-#. Reported after the number of tracks and/or items added.
-msgid "added"
-msgstr ""
+#. Reported when tracks are added. {} will be replaced with
+#. the number of tracks; e.g. "2 tracks added".
+msgid "{} track added"
+msgid_plural "{} tracks added"
+msgstr[0] "{} spor lagt til"
+msgstr[1] "{} spor lagt til"
 
 #. Reported when envelope points are added. {} will be replaced
 #. with the number of points; e.g. "2 points added".
 msgid "{} point added"
 msgid_plural "{} points added"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} punkt lagt til"
+msgstr[1] "{} punkter lagt til"
 
 #. Reported when takes are added to multiple items. {} will be replaced with the
 #. number of takes; e.g. "2 takes added to selected items".
 msgid "{} take added to selected items"
 msgid_plural "{} takes added to selected items"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} tagning lagt til valgte objekter"
+msgstr[1] "{} tagninger lagt til valgte objekter"
 
 #. Reported when takes are added. {} will be replaced with the
 #. number of takes; e.g. "2 takes added".
 msgid "{} take added"
 msgid_plural "{} takes added"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} tagning lagt til"
+msgstr[1] "{} tagninger lagt til"
 
 #. Reported when tracks are removed. {} will be replaced with the
 #. number of tracks; e.g. "2 tracks removed".
 msgid "{} track removed"
 msgid_plural "{} tracks removed"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} spor fjernet"
+msgstr[1] "{} spor fjernet"
 
 #. used for  "Item: Copy selected area of items".
 #. {} is replaced by the number of items affected.
 msgid "selected area of {} item copied"
 msgid_plural "selected area of {} items copied"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "valgt område av {} objekt kopiert"
+msgstr[1] "valgt område av {} objekter kopiert"
+
+#. used for  "Item: Copy loop of selected area of audio items".
+#. {} is replaced by the number of items affected.
+msgid "loop of selected area of {} item copied"
+msgid_plural "loop of selected area of {} items copied"
+msgstr[0] "sløyfe av valgt område av {} objekt kopiert"
+msgstr[1] "sløyfe av valgt område av {} objekter kopiert"
 
 #. used for  "Item: Duplicate selected area of items".
 #. {} is replaced by the number of items affected.
 msgid "selected area of {} item duplicated"
 msgid_plural "selected area of {} items duplicated"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "valgt område av {} objekt klonet"
+msgstr[1] "valgt område av {} objekter klonet"
 
 #. used for  "Item: Cut selected area of items" and "Item:
 #. Remove selected area of items".  {} is replaced by the number of items
 #. affected.
 msgid "selected area of {} item removed"
 msgid_plural "selected area of {} items removed"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "valgt område av {} objekt fjernet"
+msgstr[1] "valgt område av {} objekter fjernet"
 
 #. Reported when items are removed. {} will be replaced with the
 #. number of items; e.g. "2 items removed".
 msgid "{} item removed"
 msgid_plural "{} items removed"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} objekt fjernet"
+msgstr[1] "{} objekter fjernet"
 
 #. Reported when cropped to active take on  multiple items. {} will be replaced with the
 #. number of items; e.g. "2 items cropped to active take".
 msgid "{} item cropped to active take"
 msgid_plural "{} items cropped to active take"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} objekt beskjært til aktiv tagning"
+msgstr[1] "{} objekter beskjært til aktiv tagning"
 
 msgid "no takes removed"
-msgstr ""
+msgstr "ingen tagninger fjernet"
 
 #. Reported when healing was not possible.
 msgid "nothing healed"
-msgstr ""
+msgstr "ingenting limt inn"
 
 #. Reported when splits in items are healed. {} will be replaced with the
 #. number of splits that have been successfully healed; e.g. "2 splits healed".
 msgid "{} split healed"
 msgid_plural "{} splits healed"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{} splitt sammenføyd"
+msgstr[1] "{} splitter sammenføyd"
 
 msgid "contents of time selection removed"
-msgstr ""
+msgstr "innhold av tidsutvalg fjernet"
+
+msgid "start"
+msgstr "start"
+
+msgid "end"
+msgstr "slutt"
+
+#. used when reporting a named marker has been moved. {} will be
+#. replaced with the name of the marker; e.g. "v2 marker moved"
+msgid "{} marker moved"
+msgstr "{} markør flyttet"
+
+#. Reports an unnamed marker has been inserted. {} is replaced with the marker number.
+#. Reported when inserting a marker. {} will be replaced with the
+#. number of the new marker; e.g. "marker 2 inserted".
+msgid "marker {} inserted"
+msgstr "markør {} satt inn"
+
+#. used to report an unnamed marker has been moved. {} is replaced with the marker number.  
+msgid "marker {} moved"
+msgstr "markør {} flyttet"
 
 msgid "marker deleted"
-msgstr ""
+msgstr "markør slettet"
 
 msgid "region deleted"
-msgstr ""
+msgstr "region slettet"
 
 msgid "time signature deleted"
-msgstr ""
+msgstr "taktart slettet"
 
 msgid "stretch marker deleted"
-msgstr ""
+msgstr "strekkmarkør slettet"
 
 msgid "cleared time/loop selection"
-msgstr ""
+msgstr "tømt tids-/sløyfeutvalg"
 
 msgid "unselected tracks/items/envelope points"
-msgstr ""
+msgstr "ikke markert spor/objekter/kurvepunkter"
+
+msgid "OSARA: Select items under edit cursor on selected tracks"
+msgstr "OSARA: Velg objekter under redigeringsmarkør på valgte spor"
 
 #. Reported when switching to a project tab containing an
 #. unsaved project.
 msgid "[Unsaved]"
-msgstr ""
+msgstr "[Ikke lagret]"
 
 #. Used when reporting a range of tracks. {start} will be
 #. replaced with the first track. {end} will be replaced with the last track
 #. in the range. For example: "1 drums through 5 piano"
 msgid "{start} through {end}"
-msgstr ""
+msgstr "{start} til og med {end}"
+
+#. Used when reporting all tracks which are muted, soloed, etc.
+#. to indicate that no tracks are muted, soloed, etc.
+msgctxt "tracks state"
+msgid "none"
+msgstr "ingen"
 
 msgid "Muted"
-msgstr ""
+msgstr "Dempet"
 
 msgid "Soloed"
-msgstr ""
+msgstr "I solo"
 
 msgid "Armed"
-msgstr ""
+msgstr "Opptak på"
 
 msgid "Monitored"
-msgstr ""
+msgstr "Lytting på"
 
 msgid "Phase inverted"
-msgstr ""
+msgstr "Fasevendt"
+
+msgid "Frozen"
+msgstr "Fryst"
 
 msgid "Time selection:"
-msgstr ""
+msgstr "Tidsutvalg:"
 
 #. Used when reporting the time selection. {} will be
 #. replaced with the start time; e.g. "start bar 2 beat 1 0%".
 msgid "start {}"
-msgstr ""
+msgstr "start {}"
 
 #. Used when reporting the time selection. {} will be
 #. replaced with the end time; e.g. "end bar 4 beat 1 0%".
 msgid "end {}"
-msgstr ""
+msgstr "end {}"
 
 #. Used when reporting the time selection. {} will be
 #. replaced with the length; e.g. "length 2 bars 0 beats 0%".
 msgid "length {}"
-msgstr ""
+msgstr "lengde {}"
+
+msgctxt "time selection"
+msgid "none"
+msgstr "ingen"
 
 msgid "Selected tracks:"
-msgstr ""
+msgstr "Valgte spor:"
 
 msgid "Selected items:"
-msgstr ""
+msgstr "Valgte objekter:"
+
+msgctxt "item selection"
+msgid "none"
+msgstr "ingen"
 
 #. Placed before the information about the selection that has
 #. been made in the MIDI Editor when pressing OSARA's report selection
 #. action twice.
 msgid "MIDI Editor selection:"
-msgstr ""
+msgstr "Utvalg for MIDI-redigerer:"
+
+msgctxt "MIDI Editor selection"
+msgid "none"
+msgstr "ingen"
 
 msgid "no MIDI selection"
-msgstr ""
+msgstr "ingen MIDI-utvalg"
 
 msgid "no selection"
-msgstr ""
+msgstr "ingen utvalg"
 
 #. The title of the message dialog that appears when OSARA's
 #. report selection action is pressed twice.
 msgid "Selection"
-msgstr ""
+msgstr "Utvalg"
 
 #. Reported when deleting take markers. {} will be replaced with
 #. the number of markers; e.g. "2 take markers deleted".
 msgid "take marker deleted"
 msgid_plural "{} take markers deleted"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "tagningsmarkør slettet"
+msgstr[1] "{} tagningsmarkører slettet"
 
 msgid "shortcut help off"
-msgstr ""
+msgstr "hjelp for snarveier av"
 
 msgid "resumed MIDI step input"
-msgstr ""
+msgstr "gjenopptok MIDI-steginndata"
 
 msgid "shortcut help on"
-msgstr ""
+msgstr "hjelp for snarveier på"
 
 msgid "paused MIDI step input"
-msgstr ""
+msgstr "pauset MIDI-steginndata"
 
 msgid "paused"
-msgstr ""
+msgstr "pauset"
 
 msgid "recording"
-msgstr ""
+msgstr "tar opp"
 
 msgid "playing"
-msgstr ""
+msgstr "spiller av"
 
 msgid "stopped"
-msgstr ""
+msgstr "stoppet"
 
 #. Reported when the cursor is before the first marker in the
 #. project. {} will be replaced with the marker's name or number; e.g.
 #. "before marker intro".
 msgid "before marker {}"
-msgstr ""
+msgstr "før markør {}"
 
 #. Reported when the cursor is right at a marker. {} will be
 #. replaced with the marker's name or number; e.g. "at marker intro".
 msgid "at marker {}"
-msgstr ""
+msgstr "ved markør {}"
 
 #. Reported when the cursor is between two markers. {before}
 #. will be replaced with the name or number of the marker before the
 #. cursor. {after} will be replaced with the name or number of the marker
 #. after the cursor. For example: "between markers intro, verse 1".
 msgid "between markers {before}, {after}"
-msgstr ""
+msgstr "mellom markører {before},{after}"
 
 #. Reported when the cursor is after the last marker in the
 #. project. {} will be replaced with the marker's name or number; e.g.
 #. "after marker outro".
 msgid "after marker {}"
-msgstr ""
+msgstr "etter markør {}"
 
 #. Reported when the cursor is inside a region. {} will be
 #. replaced with the region's name or number; e.g. "in region intro".
 msgid "in region {}"
-msgstr ""
+msgstr "i region {}"
 
 #. Reported when the cursor is before the first region in the
 #. project. {} will be replaced with the region's name or number; e.g.
 #. "before region intro".
 msgid "before region {}"
-msgstr ""
+msgstr "før region {}"
 
 #. Reported when the cursor is after the last region in the
 #. project. {} will be replaced with the region's name or number; e.g.
 #. "before region intro".
 msgid "after region {}"
-msgstr ""
+msgstr "etter region {}"
 
 #. Reported when the cursor is between two regions. {before}
 #. will be replaced with the name or number of the region before the
 #. cursor. {after} will be replaced with the name or number of the region
 #. after the cursor. For example: "between regions intro, verse 1".
 msgid "between regions {before}, {after}"
-msgstr ""
+msgstr "mellom regioner {before},{after}"
+
+#. Reports the number of takes contained within the last touched item.
+#. {} will be replaced with the number; e.g. "1 take", or "2 takes".
+msgid "{} take"
+msgid_plural "{} takes"
+msgstr[0] "{} tagning"
+msgstr[1] "{} tagninger"
 
 msgid "Move stretch marker"
-msgstr ""
+msgstr "Flytt strekkmarkør"
 
 msgid "stretch marker moved"
-msgstr ""
+msgstr "strekkmarkør flyttet"
 
 msgid "Delete all time signature markers"
-msgstr ""
+msgstr "Slett alle taktartsmarkører"
 
 msgid "deleted all time signature markers"
-msgstr ""
+msgstr "slettet alle taktartsmarkører"
 
 #. Used to report global automation override mode.  {} is
 #. replaced with the mode; e.g. "Global automation override latch
 #. preview"
 msgid "global automation override {}"
-msgstr ""
+msgstr "global automasjonsoverstyring {}"
 
 #. Used to report track automation override mode.  {} is
 #. replaced with the mode; e.g. "track automation override latch
 #. preview"
 msgid "track automation mode {}"
-msgstr ""
+msgstr "sporautomasjonsmodus {}"
 
 msgid "global automation override off"
-msgstr ""
+msgstr "global automasjonsoverstyring av"
 
 msgid "global automation override latch preview"
-msgstr ""
+msgstr "global automasjonsoverstyring latch forhåndslytting"
 
 #. Report the track automation mode. {} is replaced with the
 #. automation mode; e.g. "automation mode trim/read for selected tracks"
 msgid "{} automation mode for selected tracks"
-msgstr ""
-
-msgid "time selection start"
-msgstr ""
-
-msgid "time selection end"
-msgstr ""
+msgstr "{} automasjonsmodus for valgte spor"
 
 #. OSARA's full name presented in the About dialog.
 msgid "OSARA: Open Source Accessibility for the REAPER Application"
-msgstr ""
+msgstr "OSARA: Open Source Accessibility for the REAPER Application"
 
 #. osara version. {} is replaced with the version; e.g.
 #. "Version: 2021.1pre-588,0531135a"
 msgid "Version: {}"
-msgstr ""
+msgstr "Versjon: {}"
 
 msgid "About OSARA"
-msgstr ""
-
-#. Reported when inserting a marker. {} will be replaced with the
-#. number of the new marker; e.g. "marker 2 inserted".
-msgid "marker {} inserted"
-msgstr ""
+msgstr "Om OSARA"
 
 #. Reported when inserting a region. {} will be replaced with the
 #. number of the new region; e.g. "region 2 inserted".
 msgid "region {} inserted"
-msgstr ""
+msgstr "region {} satt inn"
 
 #. Reported when adding items to a group. {count} will be
 #. replaced with the number of items. {group} will be replaced with the
 #. group number. For example: "2 items added to group 1".
 msgid "item added to group {group}"
 msgid_plural "{count} items added to group {group}"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "objekt lagt til gruppe {group}"
+msgstr[1] "{count} objekter lagt til gruppe {group}"
 
 #. Reported when removing items from a group. {count} will be
 #. replaced with the number of items. {group} will be replaced with the group
 #. number. For example: "2 items removed from group 1".
 msgid "item removed from group {group}"
 msgid_plural "{count} items removed from group {group}"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "objekt fjernet fra gruppe {group}"
+msgstr[1] "{count} objekter fjernet fra gruppe {group}"
 
 msgid "track not grouped"
-msgstr ""
+msgstr "spor ikke gruppert"
+
+#. Reported when switching to looped segment scrub style.
+msgid "looped segment"
+msgstr "segment i løkke"
+
+#. Reported when switching to one-shot scrub style.
+msgid "one shot"
+msgstr "engangs"
+
+#. Reported when using REAPER's default scrub style, IE when looped segment and one-shot are disabled.
+msgid "tape scrub"
+msgstr "tapeskrubbing"
 
 #. The title of the review message for the action "OSARA: Report regions, last project marker and items on selected tracks at current position".
 msgid "At Current Position"
-msgstr ""
+msgstr "Ved gjeldende posisjon"
 
+#. This is reported when users select from cursor to the start of project.
 msgid "selected to start of project"
-msgstr ""
+msgstr "valgt til starten av prosjektet"
 
 msgid "selected to end of project"
-msgstr ""
+msgstr "valgt til slutten av prosjektet"
 
 msgid "phase normal all tracks"
-msgstr ""
+msgstr "normalfase alle spor"
 
 msgid "unmonitored all tracks"
-msgstr ""
+msgstr "lytting slått av alle spor"
+
+#. {} will be replaced with the number of items; e.g.
+#. "2 items fit to time selection".
+msgid "{} item fit to time selection"
+msgid_plural "{} items fit to time selection"
+msgstr[0] "{} objekt tilpasset innenfor tidsutvalg"
+msgstr[1] "{} objekter tilpasset innenfor tidsutvalg"
+
+msgid "showed video window"
+msgstr "viste videovindu"
+
+msgid "hid video window"
+msgstr "skjulte videovindu"
+
+msgid "master track cannot be moved"
+msgstr "hovedspor kan ikke flyttes"
+
+#. Reported when trying to move a track up when it is
+#. already at the top of the track list.
+msgid "top of track list"
+msgstr "topp av sporlisten"
+
+#. Reported when trying to move a track down when it is
+#. already at the bottom of the track list.
+msgid "bottom of track list"
+msgstr "bunn av sporlisten"
+
+#. Reported when moving a track to the top of the track list.
+#. {track} will be replaced with a track reference; e.g. "vocal",
+#. "3", "3 vocal", "drums folder" or "3 drums nested folder".
+#. For example: "top of track list, above 3 drums nested folder".
+msgid "top of track list, above {track}"
+msgstr "topp av sporlisten, over {track}"
+
+#. Reported when moving a track to the bottom of the track list.
+#. {track} will be replaced with a track reference; e.g. "vocal",
+#. "3", "3 vocal", "drums folder" or "3 drums nested folder".
+#. For example: "bottom of track list, below 3 drums nested folder".
+msgid "bottom of track list, below {track}"
+msgstr "bunn av sporlisten, under {track}"
+
+#. An entry in OSARA's context menu for analyzing loudness statistics.
+msgid "Master mix"
+msgstr "Hovedmiks"
+
+#. An entry in OSARA's context menu for analyzing loudness statistics.
+#. An entry in OSARA's context menu for analyzing loudness statistics.
+msgid "Time &selection"
+msgstr "Tid&sutvalg"
+
+#. An entry in OSARA's context menu for analyzing loudness statistics.
+msgid "Tracks"
+msgstr "Spor"
+
+#. An entry in OSARA's context menu for analyzing loudness statistics.
+msgid "Selected &tracks"
+msgstr "Valg&te spor"
+
+#. An entry in OSARA's context menu for analyzing loudness statistics.
+msgid "&Mono summed selected tracks"
+msgstr "Summerte valgte spor til &mono"
+
+#. An entry in OSARA's context menu for analyzing loudness statistics.
+msgid "Mono summed time selection"
+msgstr "Summerte tidsutvalg til mono"
+
+#. An entry in OSARA's context menu for analyzing loudness statistics.
+msgid "Items"
+msgstr "Objekter"
+
+#. An entry in OSARA's context menu for analyzing loudness statistics.
+msgid "Selected &items"
+msgstr "Valgte &objekter"
+
+#. An entry in OSARA's context menu for analyzing loudness statistics.
+msgid "Include track/take &FX and settings"
+msgstr "Behold spor-/tagnings-&FX og innstillinger"
+
+#. An entry in OSARA's context menu for analyzing loudness statistics.
+msgid "Dry run project using the most recent render settings"
+msgstr "Bruk sist gjeldende renderinnstillinger for å testkjøre"
 
 msgid "OSARA: Move to next item (leaving other items selected)"
-msgstr ""
+msgstr "OSARA: Gå til neste objekt (behold valgte objekter)"
 
 msgid "OSARA: Move to previous item (leaving other items selected)"
-msgstr ""
+msgstr "OSARA: Gå til forrige objekt (behold valgte objekter)"
 
 msgid "OSARA: View properties for current media item/take/automation item (depending on focus)"
-msgstr ""
+msgstr "OSARA: Vis egenskaper for gjeldende medieobjekt/tagning/automasjonsobjekt (avhengig av fokus)"
 
 msgid "OSARA: View parameters for current track/item/FX (depending on focus)"
-msgstr ""
+msgstr "OSARA: Vis parametre for gjeldende spor/objekt/FX (avhengig av fokus)"
 
 msgid "OSARA: View FX parameters for current track/take (depending on focus)"
-msgstr ""
+msgstr "OSARA: Vis FX-parametre for gjeldende spor/tagning (avhengig av fokus)"
 
 msgid "OSARA: View FX parameters for master track"
-msgstr ""
+msgstr "OSARA: Vis FX-parametre for hovedspor"
 
-msgid "OSARA: Configure Peak Watcher for current track/track FX (depending on focus)"
+msgid "OSARA: Configure Peak Watcher for current track/FX (depending on focus)"
 msgstr ""
 
 msgid "OSARA: Report Peak Watcher value for first watcher first channel"
-msgstr ""
+msgstr "OSARA: Meld toppvakt-verdi for første overvåker første kanal"
 
 msgid "OSARA: Report Peak Watcher value for first watcher second channel"
-msgstr ""
+msgstr "OSARA: Meld toppvakt-verdi for første overvåker andre kanal"
 
 msgid "OSARA: Report Peak Watcher value for second watcher first channel"
-msgstr ""
+msgstr "OSARA: Meld toppvakt-verdi for andre overvåker første kanal"
 
 msgid "OSARA: Report Peak Watcher value for second watcher second channel"
-msgstr ""
+msgstr "OSARA: Meld toppvakt-verdi for andre overvåker andre kanal"
 
 msgid "OSARA: Reset Peak Watcher first watcher"
-msgstr ""
+msgstr "OSARA: Nullstill første toppvakt"
 
 msgid "OSARA: Reset Peak Watcher second watcher"
-msgstr ""
+msgstr "OSARA: Nullstill andre toppvakt"
 
 msgid "OSARA: Pause/resume Peak Watcher"
-msgstr ""
+msgstr "OSARA: Pause/gjenoppta toppvakt"
 
 msgid "OSARA: Report ripple editing mode"
-msgstr ""
+msgstr "OSARA: Meld ringvirkningsmodus"
 
 msgid "OSARA: Report muted tracks"
-msgstr ""
+msgstr "OSAR: Meld dempede spor"
 
 msgid "OSARA: Report soloed tracks"
-msgstr ""
+msgstr "OSARA: Meld spor i solo"
 
 msgid "OSARA: Report record armed tracks"
-msgstr ""
+msgstr "OSARA: Meld spor aktivert for opptak"
 
 msgid "OSARA: Report tracks with record monitor on"
-msgstr ""
+msgstr "OSARA: Meld spor med innspillingslytting på"
 
 msgid "OSARA: Report tracks with phase inverted"
-msgstr ""
+msgstr "OSARA: Meld fasevendte spor"
+
+msgid "OSARA: Report frozen tracks"
+msgstr "OSARA: Meld fryste spor"
 
 msgid "OSARA: Report track/item/time/MIDI selection (depending on focus)"
-msgstr ""
+msgstr "OSARA: Meld spor-/objekt-/tid-/MIDI-utvalg (avhengig av fokus)"
 
 msgid "OSARA: Remove items/tracks/contents of time selection/markers/envelope points (depending on focus)"
-msgstr ""
+msgstr "OSARA: Fjern objekter/spor/innhold ut fra tidsutvalg/markører/kurvepunkter (avhengig av fokus)"
 
 msgid "OSARA: Toggle shortcut help"
-msgstr ""
+msgstr "OSARA: Slå av/på hjelp for snarveier"
 
 msgid "OSARA: Report edit/play cursor position, transport state and nearest markers and regions"
-msgstr ""
+msgstr "OSARA: Meld posisjon for redigering-/avspillingsmarkør, avspillingstilstand og nærmeste markører og regioner"
+
+msgid "OSARA: Report number of takes in last touched item"
+msgstr "OSARA: Meld om antall tagninger i sist berørte objekt"
+
+msgid "OSARA: Report length of last touched item"
+msgstr "OSARA: Meld om lengde på sist berørte objekt"
+
+msgid "OSARA: Report project length"
+msgstr "OSARA: Meld om prosjektlengde"
 
 msgid "OSARA: Enable noncontiguous selection/toggle selection of current track/item (depending on focus)"
-msgstr ""
+msgstr "OSARA: Slå på ikke-sammenhengende utvalg/bytte valg av gjeldende spor/objekt (avhengig av fokus)"
 
 msgid "OSARA: Move last focused stretch marker to current edit cursor position"
-msgstr ""
+msgstr "OSARA: Flytt strekkmarkør som sist hadde fokus til gjeldende redigeringsmarkør"
 
 msgid "OSARA: Report level in peak dB at play cursor for channel 1 of current track (reports input level instead when track is armed)"
-msgstr ""
+msgstr "OSARA: Meld toppnivå i dB ved avspillingshode for kanal 1 av gjeldende spor (melder inngangsnivå i stedet dersom sporet er aktivert for opptak)"
 
 msgid "OSARA: Report level in peak dB at play cursor for channel 2 of current track (reports input level instead when track is armed)"
-msgstr ""
+msgstr "OSARA: Meld toppnivå i dB ved avspillingshode for kanal 2 av gjeldende spor (melder inngangsnivå i stedet dersom sporet er aktivert for opptak)"
 
 msgid "OSARA: Report level in peak dB at play cursor for channel 1 of master track"
-msgstr ""
+msgstr "OSARA: Meld toppnivå i dB ved avspillingshode for kanal 1 av hovedspor"
 
 msgid "OSARA: Report level in peak dB at play cursor for channel 2 of master track"
-msgstr ""
+msgstr "OSARA: Meld toppnivå i dB ved avspillingshode for kanal 2 av hovedspor"
 
 msgid "OSARA: Delete all time signature markers"
-msgstr ""
+msgstr "OSARA: Slett alle taktartsmarkører"
 
 msgid "OSARA: Select next track/take envelope (depending on focus)"
-msgstr ""
+msgstr "OSARA: Velg neste spor-/tagningskurve (avhengig av fokus)"
 
 msgid "OSARA: Select previous track/take envelope (depending on focus)"
-msgstr ""
+msgstr "OSARA: Velg forrige spor-/tagningskurve (avhengig av fokus)"
 
 msgid "OSARA: Move to next envelope point"
-msgstr ""
+msgstr "OSARA: Gå til neste kurvepunkt"
 
 msgid "OSARA: Move to previous envelope point"
-msgstr ""
+msgstr "OSARA: Gå til forrige kurvepunkt"
 
 msgid "OSARA: Move to next envelope point (leaving other points selected)"
-msgstr ""
+msgstr "OSARA: Gå til neste kurvepunkt (behold valgte punkter)"
 
 msgid "OSARA: Move to previous envelope point (leaving other points selected)"
-msgstr ""
+msgstr "OSARA: Gå til forrige kurvepunkt (behold valgte punkter)"
 
 msgid "OSARA: Move to next transient"
-msgstr ""
+msgstr "OSARA: Gå til neste transient"
 
 msgid "OSARA: Move to previous transient"
-msgstr ""
+msgstr "OSARA: Gå til forrige transient"
 
 msgid "OSARA: Show first context menu (depending on focus)"
-msgstr ""
+msgstr "OSARA: Vis første kontekstmeny (avhengig av fokus)"
 
 msgid "OSARA: Show second context menu (depending on focus)"
-msgstr ""
+msgstr "OSARA: Vis andre kontekstmeny (avhengig av fokus)"
 
 msgid "OSARA: Show third context menu (depending on focus)"
-msgstr ""
+msgstr "OSARA: Vis tredje kontekstmeny (avhengig av fokus)"
 
 msgid "OSARA: Cycle through midi recording modes of selected tracks"
-msgstr ""
+msgstr "OSARA: Veksle mellom midi-opptaksmoduser for valgte spor"
 
 msgid "OSARA: Configuration"
-msgstr ""
+msgstr "OSARA: Innstillinger"
 
 msgid "OSARA: Report global / Track Automation Mode"
-msgstr ""
+msgstr "OSARA: Meld global-/sporautomasjonsmodus"
 
 msgid "OSARA: Toggle global automation override between latch preview and off"
-msgstr ""
+msgstr "OSARA: Veksle global automasjonsoverstyring mellom latch forhåndslytt og av"
 
 msgid "OSARA: Cycle automation mode of selected tracks"
-msgstr ""
+msgstr "OSARA: Veksle mellom automasjonsmoduser for valgte spor"
 
 msgid "OSARA: About"
-msgstr ""
+msgstr "OSARA: Om"
 
 msgid "OSARA: Report groups for current track"
-msgstr ""
+msgstr "OSARA: Meld grupper for gjeldende spor"
 
 msgid "OSARA: Mute next message from OSARA"
-msgstr ""
+msgstr "OSARA: Demp neste melding fra OSARA"
 
 msgid "OSARA: Report regions, last project marker and items on selected tracks at current position"
-msgstr ""
+msgstr "OSARA: Meld regioner, siste prosjektmarkør og objekter på valgte spor ved gjeldende posisjon"
 
 msgid "OSARA: Go to first track"
-msgstr ""
+msgstr "OSARA: Gå til første spor"
 
 msgid "OSARA: Go to last track"
-msgstr ""
+msgstr "OSARA: Gå til siste spor"
 
 msgid "OSARA: Go to master track"
-msgstr ""
+msgstr "OSARA: Gå til hovedspor"
 
 msgid "OSARA: Cycle shape of selected envelope points"
-msgstr ""
+msgstr "OSARA: Veksle mellom form på valgte kurvepunkter"
 
 msgid "OSARA: Toggle track/take volume envelope visibility (depending on focus)"
-msgstr ""
+msgstr "OSARA: Slå på/av synlighet for spor-/tagningsvolumkurve (avhengig av fokus)"
 
 msgid "OSARA: Toggle track/take pan envelope visibility (depending on focus)"
-msgstr ""
+msgstr "OSARA: Slå på/av synlighet for spor-/tagningspankurve (avhengig av fokus)"
 
 msgid "OSARA: Toggle track/take mute envelope visibility (depending on focus)"
-msgstr ""
+msgstr "OSARA: Slå på/av synlighet for spor-/tagningsdempekurve (avhengig av fokus)"
 
 msgid "OSARA: Toggle track pre-FX pan or take pitch envelope visibility (depending on focus)"
-msgstr ""
+msgstr "OSARA: Slå på/av synlighet for pre-FX pan-kurve eller kurve for tagningstonehøyde (avhengig av fokus)"
 
 msgid "OSARA: Select from cursor to start of project"
-msgstr ""
+msgstr "OSARA: Velg ut fra peker til start på prosjektet"
 
 msgid "OSARA: Select from cursor to end of project"
-msgstr ""
+msgstr "OSARA: Velg ut fra peker til avslutningen på prosjektet"
 
 msgid "OSARA: Set phase normal for all tracks"
-msgstr ""
+msgstr "OSARA: Angi normalfase for alle spor"
 
 msgid "OSARA: Unmonitor all tracks"
-msgstr ""
+msgstr "OSARA: Slå av lytting på alle spor"
 
 msgid "OSARA: Configure REAPER for optimal screen reader accessibility"
-msgstr ""
+msgstr "OSARA: Sett opp REAPER best tilpasset skjermleser"
 
 msgid "OSARA: Check for update"
-msgstr ""
+msgstr "OSARA: Se etter oppdateringer"
 
 msgid "OSARA: Open online documentation"
-msgstr ""
+msgstr "OSARA: Åpne nettdokumentasjon"
 
 msgid "OSARA: Report tempo and time signature at play cursor; press twice to add/edit tempo markers"
-msgstr ""
+msgstr "OSARA: Meld om tempo og taktart ved avspillingspeker; trykk to ganger for å legge til eller endre tempomarkører"
+
+msgid "OSARA: Report scrub segment offsets; press twice to edit"
+msgstr "OSARA: Meld forflytning av skrubbesegment; trykk to ganger for å redigere"
+
+msgid "OSARA: Scrub faster, nudge and adjust item edges in larger increments, zoom out"
+msgstr "OSARA: Skrubb raskere, dytt og juster objektkanter i større trinn, forminsk"
+
+msgid "OSARA: Scrub slower, nudge and adjust item edges in smaller increments, zoom in"
+msgstr "OSARA: Skrubb raskere, dytt og juster objektkanter i mindre trinn, forstørr"
+
+msgid "OSARA: Analyze and show peak and loudness statistics for selected tracks/items"
+msgstr "OSARA: Analyser og vis topp- og lydstyrkestatistikk for valgte spor/objekter"
 
 msgid "OSARA: Enable noncontiguous selection/toggle selection of current chord/note"
-msgstr ""
+msgstr "OSARA: Slå på ikke-sammenhengende utvalg/veksle valg av gjeldende akkord/note"
 
-msgid "OSARA: Move to next chord"
-msgstr ""
+msgid "OSARA: Move forward to next single note or chord"
+msgstr "OSARA: Gå fremover til neste enkle note eller akkord"
 
-msgid "OSARA: Move to previous chord"
-msgstr ""
+msgid "OSARA: Move backward to previous single note or chord"
+msgstr "OSARA: Gå bakover til forrige enkle note eller akkord"
 
-msgid "OSARA: Move to next chord and add to selection"
-msgstr ""
+msgid "OSARA: Move forward to next single note or chord and add to selection"
+msgstr "OSARA: Gå fremover til neste enkle note eller akkord og utvid utvalg"
 
-msgid "OSARA: Move to previous chord and add to selection"
-msgstr ""
+msgid "OSARA: Move backward to previous single note or chord and add to selection"
+msgstr "OSARA: Gå bakover til forrige enkle note eller akkord og utvid utvalg"
 
-msgid "OSARA: Move to next note in chord"
-msgstr ""
+msgid "OSARA: Move to higher note in chord"
+msgstr "OSAR: Gå til høyere note i akkord"
 
-msgid "OSARA: Move to previous note in chord"
-msgstr ""
+msgid "OSARA: Move to lower note in chord"
+msgstr "OSARA: Gå til lavere note i akkord"
 
-msgid "OSARA: Move to next note in chord and add to selection"
-msgstr ""
+msgid "OSARA: Move to higher note in chord and add to selection"
+msgstr "OSARA: Gå til høyere note i akkord og utvid utvalg"
 
-msgid "OSARA: Move to previous note in chord and add to selection"
-msgstr ""
+msgid "OSARA: Move to lower note in chord and add to selection"
+msgstr "OSARA: Gå til lavere note i akkord og utvid utvalg"
 
 msgid "OSARA: Move to next CC"
-msgstr ""
+msgstr "OSARA: Gå til neste CC"
 
 msgid "OSARA: Move to previous CC"
-msgstr ""
+msgstr "OSARA: Gå til forrige CC"
 
 msgid "OSARA: Move to next CC and add to selection"
-msgstr ""
+msgstr "OSARA: Gå til neste CC og utvid utvalg"
 
 msgid "OSARA: Move to previous CC and add to selection"
-msgstr ""
+msgstr "OSARA: Gå til forrige CC og utvid utvalg"
 
 msgid "OSARA: Select all notes with the same pitch starting in time selection"
-msgstr ""
+msgstr "OSARA: Velg alle noter med samme tonehøyde som starter innenfor tidsutvalg"
 
 msgid "OSARA: Focus event nearest edit cursor"
-msgstr ""
+msgstr "OSARA: Fokuser på hendelse nærmest redigeringspeker"
 
 msgid "Configuration..."
-msgstr ""
+msgstr "Innstilling..."
 
 msgid "Online &documentation"
-msgstr ""
+msgstr "&Dokumentasjon på nett"
 
 msgid "Check for &update"
-msgstr ""
+msgstr "Se etter &oppdateringer"
 
 msgid "Configure REAPER for &optimal screen reader accessibility"
-msgstr ""
+msgstr "Sett opp REAPER &best tilpasset skjermleser"
 
 msgid "No OSARA update available."
-msgstr ""
+msgstr "Ingen OSARA-oppdateringer tilgjengelig."
 
 msgctxt "OSARA Update"
 msgid "OSARA Update"
-msgstr ""
+msgstr "Oppdater OSARA"
 
 msgid "OSARA version {} is available. Changes:"
-msgstr ""
+msgstr "OSARA versjon {} er tilgjengelig. Endringer:"
 
 msgid "Error checking for OSARA update."
-msgstr ""
+msgstr "En feil oppsto under søk etter OSARA-oppdatering."
 
 msgctxt "Parameters"
 msgid "Parameters"
-msgstr ""
+msgstr "Parametre"
 
 msgctxt "Parameters"
 msgid "&Parameter:"
-msgstr ""
+msgstr "&Parameter:"
 
 msgctxt "Parameters"
 msgid "Value:"
-msgstr ""
+msgstr "Verdi:"
 
 msgctxt "Parameters"
 msgid "&More"
-msgstr ""
+msgstr "&Mer"
 
 msgctxt "Parameters"
 msgid "&Filter:"
-msgstr ""
+msgstr "&Filter:"
 
 msgctxt "Parameters"
-msgid "Include &unnamed parameters"
-msgstr ""
+msgid "Include &unnamed and potentially unusable parameters"
+msgstr "Ta med ikke-navngitte og potensielt &ubrukelige parametre"
+
+msgctxt "Parameters"
+msgid "&Try setting value to detect steps"
+msgstr "&Prøv å sette verdi for å detektere trinn"
 
 msgctxt "Parameters"
 msgid "&Close"
-msgstr ""
+msgstr "&Lukk"
 
 msgctxt "Peak Watcher"
 msgid "&Follow when last touched track changes"
-msgstr ""
+msgstr "&Følg endring av sist berørte spor"
 
 msgctxt "Peak Watcher"
 msgid "Level type:"
-msgstr ""
+msgstr "Nivåtype:"
 
 msgctxt "Peak Watcher"
 msgid "Notify automatically for channels:"
-msgstr ""
+msgstr "Meld automatisk for kanaler:"
 
 msgctxt "Peak Watcher"
 msgid "&1"
-msgstr ""
+msgstr "&1"
 
 msgctxt "Peak Watcher"
 msgid "&2"
-msgstr ""
+msgstr "&2"
 
 msgctxt "Peak Watcher"
 msgid "When &level reaches:"
-msgstr ""
+msgstr "Når &nivået når:"
 
 msgctxt "Peak Watcher"
 msgid "Hold level:"
-msgstr ""
+msgstr "Holdnivå:"
 
 msgctxt "Peak Watcher"
 msgid "&disabled"
-msgstr ""
+msgstr "&slått av"
 
 msgctxt "Peak Watcher"
 msgid "&until reset"
-msgstr ""
+msgstr "&til tilbakestilling"
 
 msgctxt "Peak Watcher"
 msgid "for (&ms):"
-msgstr ""
+msgstr "for (&ms):"
 
 msgctxt "Peak Watcher"
 msgid "&Reset"
-msgstr ""
+msgstr "&Nullstill"
 
 msgctxt "Peak Watcher"
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 msgctxt "Peak Watcher"
 msgid "Cancel"
-msgstr ""
+msgstr "Avbryt"
 
 msgctxt "Peak Watcher"
 msgid "D&isable"
-msgstr ""
+msgstr "S&lå av"
 
 msgctxt "Message"
 msgid "Message"
-msgstr ""
+msgstr "Melding"
 
 msgctxt "Message"
 msgid "&Close"
-msgstr ""
+msgstr "&Lukk"
 
 msgctxt "FX Preset"
 msgid "FX Preset"
-msgstr ""
+msgstr "FX-forvalg"
 
 msgctxt "FX Preset"
-msgid "Filter:"
-msgstr ""
+msgid "&Presets:"
+msgstr "&Forvalg:"
 
 msgctxt "FX Preset"
-msgid "&OK"
-msgstr ""
+msgid "&Filter:"
+msgstr "&Filter:"
 
 msgctxt "FX Preset"
-msgid "&Cancel"
-msgstr ""
+msgid "&Apply"
+msgstr "&Bruk"
+
+msgctxt "FX Preset"
+msgid "&Close"
+msgstr "&Lukk"
 
 msgctxt "OSARA Update"
 msgid "Go to &download page"
-msgstr ""
+msgstr "Gå til ne&dlastingssiden"
 
 msgctxt "OSARA Update"
 msgid "&Close"
-msgstr ""
+msgstr "&Lukk"
+
+msgctxt "Configure REAPER for Optimal Screen Reader Accessibility"
+msgid "Configure REAPER for Optimal Screen Reader Accessibility"
+msgstr "Sett opp REAPER best tilpasset skjermleser"
+
+msgctxt "Configure REAPER for Optimal Screen Reader Accessibility"
+msgid "&Yes"
+msgstr "&Ja"
+
+msgctxt "Configure REAPER for Optimal Screen Reader Accessibility"
+msgid "&No"
+msgstr "&Nei"
 
 msgctxt "OSARA Configuration"
 msgid "OSARA Configuration"
-msgstr ""
+msgstr "OSARA-innstillinger"
 
 msgctxt "OSARA Configuration"
 msgid "Report position when &scrubbing"
-msgstr ""
+msgstr "Meld posisjon ved &skrubbing"
 
 msgctxt "OSARA Configuration"
 msgid "Report time movement during playback/recording"
-msgstr ""
+msgstr "Meld tidsbevegelse under avspilling/opptak"
 
 msgctxt "OSARA Configuration"
 msgid "Report f&ull time for time movement commands"
-msgstr ""
+msgstr "Meld f&ull tid for tidsbevegelseskommandoer"
 
 msgctxt "OSARA Configuration"
 msgid "&Move relative to the play cursor for time movement commands during playback"
-msgstr ""
+msgstr "&Flytt relativt til avspillingshodet for tidsbevegelseskommandoer under avspilling"
 
 msgctxt "OSARA Configuration"
 msgid "Report mar&kers and regions during playback"
-msgstr ""
+msgstr "Meld om mar&kører og regioner under avspilling"
 
 msgctxt "OSARA Configuration"
-msgid "Report &transport state (play, record, etc.)"
-msgstr ""
+msgid "Report time se&lection start and end while playing"
+msgstr "Meld om tidsutva&lg start og slutt under avspilling"
 
 msgctxt "OSARA Configuration"
-msgid "&Report track numbers"
-msgstr ""
+msgid "Report &transport play, pause and stop"
+msgstr "Meld om &transport spill av, pause og stopp"
+
+msgctxt "OSARA Configuration"
+msgid "Report &recording state"
+msgstr "Meld om &innspillingsstatus"
+
+msgctxt "OSARA Configuration"
+msgid "Report tr&ack numbers"
+msgstr "Meld om s&pornummer"
 
 msgctxt "OSARA Configuration"
 msgid "Report &FX when moving to tracks/takes"
-msgstr ""
+msgstr "Meld om &FX når du går til spor/tagninger"
 
 msgctxt "OSARA Configuration"
 msgid "Report &position when navigating events in MIDI editor"
-msgstr ""
+msgstr "Meld om &posisjon når du navigerer mellom hendelser i MIDI-redigerer"
 
 msgctxt "OSARA Configuration"
 msgid "Report MIDI &notes in MIDI editor"
-msgstr ""
+msgstr "Meld om MIDI-&noter i MIDI-redigerer"
 
 msgctxt "OSARA Configuration"
 msgid "Report changes made via &control surfaces"
-msgstr ""
+msgstr "Meld om endringer gjort fra &styreflater"
+
+msgctxt "OSARA Configuration"
+msgid "Move cursor relative to adjusting &edges of items and time selection"
+msgstr "Flytt peker relativt til kanter av objekter og tidsutvalg"
 
 msgctxt "OSARA Configuration"
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 msgctxt "OSARA Configuration"
 msgid "Cancel"
-msgstr ""
+msgstr "Avbryt"
 
