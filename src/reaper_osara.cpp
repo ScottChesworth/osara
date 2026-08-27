@@ -4754,8 +4754,12 @@ void cmdAddOrRemoveStretch(int command) {
 	}
 	int difference = newCount - oldCount;
 	if (newCount >= oldCount) {
+		// Markers are often added during playback, so only report this if the
+		// user wants time movement reported. Removal isn't gated this way
+		// because it requires navigating to the marker first, so it's far less
+		// likely to occur repeatedly during playback.
 		if (shouldReportTimeMovement()) {
-		// Translators: Reported when one or more stretch markers are added. {} will be replaced by the number of stretch markers, EG "2 stretch markers added".
+			// Translators: Reported when one or more stretch markers are added. {} will be replaced by the number of stretch markers, EG "2 stretch markers added".
 			outputMessage(format(
 				translate_plural("{} stretch marker added", "{} stretch markers added", difference),
 				difference));
@@ -5262,7 +5266,7 @@ void cmdRemoveFocus(int command) {
 			cmdDeleteTimeSig(0);
 			break;
 		case FOCUS_STRETCH:
-			cmdAddOrRemoveStretch(41859);
+			cmdAddOrRemoveStretch(41859); // Item: remove stretch marker at current position
 			break;
 		case FOCUS_ENVELOPE:
 			cmdhDeleteEnvelopePointsOrAutoItems(40333, true, false); // Envelope: Delete all selected points
