@@ -944,7 +944,7 @@ This list is worth referencing when making your own key map additions, assigning
 - Item: Nudge items volume +1dB
 - Item: Nudge items volume -1dB
 - Item: Add stretch marker at cursor
-- Item: remove stretch marker at current position
+- Item: Remove stretch marker at current position
 - Item: Remove all stretch markers
 - Item: Remove all stretch markers in time selection
 - Item: Set cursor to next take marker in selected items

@@ -4754,11 +4754,11 @@ void cmdAddOrRemoveStretch(int command) {
 	}
 	int difference = newCount - oldCount;
 	if (newCount >= oldCount) {
-		// Markers are often added during playback, so only report this if the
-		// user wants time movement reported. Removal isn't gated this way
-		// because it requires navigating to the marker first, so it's far less
-		// likely to occur repeatedly during playback.
-		if (shouldReportTimeMovement()) {
+		// Markers are often added during playback, so only report this while
+		// playing if the user wants markers reported. Removal isn't gated this
+		// way because it requires navigating to the marker first, so it's far
+		// less likely to occur repeatedly during playback.
+		if (settings::reportMarkersWhilePlaying || !(GetPlayState() & 1)) {
 			// Translators: Reported when one or more stretch markers are added. {} will be replaced by the number of stretch markers, EG "2 stretch markers added".
 			outputMessage(format(
 				translate_plural("{} stretch marker added", "{} stretch markers added", difference),
@@ -5266,7 +5266,7 @@ void cmdRemoveFocus(int command) {
 			cmdDeleteTimeSig(0);
 			break;
 		case FOCUS_STRETCH:
-			cmdAddOrRemoveStretch(41859); // Item: remove stretch marker at current position
+			cmdAddOrRemoveStretch(41859); // Item: Remove stretch marker at current position
 			break;
 		case FOCUS_ENVELOPE:
 			cmdhDeleteEnvelopePointsOrAutoItems(40333, true, false); // Envelope: Delete all selected points
@@ -6337,7 +6337,7 @@ Command COMMANDS[] = {
 	{MAIN_SECTION, {{0, 0, 40615}, nullptr}, nullptr, cmdDeleteRegion}, // Markers: Delete region near cursor
 	{MAIN_SECTION, {{0, 0, 40617}, nullptr}, nullptr, cmdDeleteTimeSig}, // Markers: Delete time signature marker near cursor
 	{MAIN_SECTION, {{0, 0, 41842}, nullptr}, nullptr, cmdAddOrRemoveStretch}, // Item: Add stretch marker at cursor
-	{MAIN_SECTION, {{0, 0, 41859}, nullptr}, nullptr, cmdAddOrRemoveStretch}, // Item: remove stretch marker at current position
+	{MAIN_SECTION, {{0, 0, 41859}, nullptr}, nullptr, cmdAddOrRemoveStretch}, // Item: Remove stretch marker at current position
 	{MAIN_SECTION, {{0, 0, 41844}, nullptr}, nullptr, cmdAddOrRemoveStretch}, // Item: Remove all stretch markers
 	{MAIN_SECTION, {{0, 0, 41845}, nullptr}, nullptr, cmdAddOrRemoveStretch}, // Item: Remove all stretch markers in time selection
 	{MAIN_SECTION, {{0, 0, 40020}, nullptr}, nullptr, cmdClearTimeLoopSel}, // Time selection: Remove time selection and loop point selection
