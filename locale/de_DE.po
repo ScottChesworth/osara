@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: osara\n"
 "Language-Team: German\n"
 "Language: de_DE\n"
-"PO-Revision-Date: 2025-09-15 18:44\n"
+"PO-Revision-Date: 2026-08-15 18:52\n"
 
 msgid "enabled"
 msgstr "aktiviert"
@@ -67,6 +67,10 @@ msgstr ""
 
 msgctxt "optimal REAPER configuration"
 msgid "9. Make Control+Space play/stop when keyboard focus is in dialogs, needed with REAPER 7.41 or newer."
+msgstr ""
+
+msgctxt "optimal REAPER configuration"
+msgid "10. Display the file name and then the full path in the Recent Projects menu."
 msgstr ""
 
 msgctxt "optimal REAPER configuration"
@@ -143,6 +147,10 @@ msgstr "Time Selektion Anfang"
 
 msgid "time selection end"
 msgstr "Time Selektion Ende"
+
+#. A MIDI CC. {control} will be replaced with the control number and name. {value} will be replaced with the value of the control; e.g. "control 70 (Sound Variation), 64"
+msgid "Control {control}, {value}"
+msgstr "Control {control}, {value}"
 
 #. Reported when removing automation items. {} will be
 #. replaced with the number of items; e.g. "2 automation items removed".
@@ -623,10 +631,6 @@ msgstr "Poly On"
 msgid "Poly Aftertouch {note}  {value}"
 msgstr "Poly Aftertouch {note}  {value}"
 
-#. A MIDI CC. {control} will be replaced with the control number and name. {value} will be replaced with the value of the control; e.g. "control 70 (Sound Variation), 64"
-msgid "Control {control}, {value}"
-msgstr "Control {control}, {value}"
-
 msgid "Program {}"
 msgstr "Program {}"
 
@@ -982,6 +986,11 @@ msgstr ""
 msgid "{} pixels/second"
 msgstr ""
 
+#. Reported when zooming in or out vertically in the MIDI editor. {} will be
+#. replaced with the number of pixels per semitone; e.g. 12 pixels/semitone.
+msgid "{} pixels/semitone"
+msgstr ""
+
 #. Reported in Parameters dialogs for a toggle (such as mute)
 #. which is on.
 msgid "on"
@@ -1002,6 +1011,17 @@ msgid "Unrestrict maximum"
 msgstr ""
 
 msgid "Restrict maximum to current value"
+msgstr ""
+
+msgid "Channel lists must contain positive numbers separated by spaces."
+msgstr ""
+
+msgid "Channels must be from 1 through 128."
+msgstr ""
+
+#. An error reported when the channels mapped to an an FX
+#. input or output could not be set.
+msgid "Could not set the channels."
 msgstr ""
 
 msgid "low shelf"
@@ -1049,8 +1069,41 @@ msgstr "Band {} aktivieren"
 msgid "Band {} type"
 msgstr "Band {} Typ"
 
+#. A category in the FX Parameters dialog containing input pin
+#. mappings.
+msgid "Inputs"
+msgstr ""
+
+#. The name of an unnamed input pin in the FX Parameters dialog.
+#. {} will be replaced with the pin number.
+msgid "Input {}"
+msgstr ""
+
+#. A parameter in the FX Parameters dialog which configures the
+#. track channels from which an input pin receives. {} is the pin name.
+msgid "{} receives from track channels"
+msgstr ""
+
+#. A category in the FX Parameters dialog containing output pin
+#. mappings.
+msgid "Outputs"
+msgstr ""
+
+#. The name of an unnamed output pin in the FX Parameters dialog.
+#. {} will be replaced with the pin number.
+msgid "Output {}"
+msgstr ""
+
+#. A parameter in the FX Parameters dialog which configures the
+#. track channels to which an output pin is sent. {} is the pin name.
+msgid "{} sends to track channels"
+msgstr ""
+
 msgid "FX Parameters"
 msgstr "FX Parameter"
+
+msgid "Show/hide &envelope"
+msgstr ""
 
 msgid "Go to send destination track"
 msgstr ""
@@ -1069,11 +1122,9 @@ msgstr ""
 
 #. Indicates no MIDI channels for a send in the Track
 #. Parameters dialog.
-#. An automation mode.
-#. Used when reporting all tracks which are muted, soloed, etc.
-#. to indicate that no tracks are muted, soloed, etc.
+msgctxt "MIDI channel"
 msgid "none"
-msgstr "keine"
+msgstr ""
 
 #. Indicates all MIDI channels for a send in the Track
 #. Parameters dialog.
@@ -1092,6 +1143,10 @@ msgstr ""
 msgid "Add &4 new channels"
 msgstr ""
 
+msgctxt "audio channel"
+msgid "none"
+msgstr ""
+
 msgid "post-fader"
 msgstr ""
 
@@ -1099,6 +1154,15 @@ msgid "pre-fx"
 msgstr ""
 
 msgid "post-fx"
+msgstr ""
+
+msgid "sends"
+msgstr ""
+
+msgid "receives"
+msgstr ""
+
+msgid "hardware outputs"
 msgstr ""
 
 msgid "mute"
@@ -1120,21 +1184,6 @@ msgid "destination audio channel"
 msgstr ""
 
 msgid "send type"
-msgstr ""
-
-#. Indicates a parameter for a track send in the Track Parameters
-#. dialog.
-msgid "send"
-msgstr "Send"
-
-#. Indicates a parameter for a track receive in the Track
-#. Parameters dialog.
-msgid "receive"
-msgstr "Receive"
-
-#. Indicates a parameter for a hardware audio output in the
-#.  Track Parameters dialog.
-msgid "hardware"
 msgstr ""
 
 msgid "Track Parameters"
@@ -1299,16 +1348,10 @@ msgstr[1] ""
 msgid "{} min"
 msgstr "{} Minuten"
 
-#. Used when reporting a time in seconds. {:.3f} will be
-#. replaced with the number of seconds; e.g. "2 sec".
-msgid "{:#.3f} sec"
-msgstr "{:#.3f} Sekunden"
-
-#. Used when reporting a time in seconds. {:.3f} will be
-#. replaced with the number of seconds; e.g. "2 sec".
-msgid "{:.3f} sec"
-msgstr "{:.3f} Sekunden"
-
+#. Used when reporting a time in seconds. {} will be replaced
+#. with the number of seconds; e.g. "2 sec".
+#. Used when reporting a time in seconds. {} will be replaced
+#. with the number of seconds; e.g. "2 sec".
 #. Used when reporting a time in whole seconds. {} will be
 #. replaced with the number of seconds; e.g. "2 sec".
 #. Used when reporting a time in seconds. {} will be
@@ -1363,6 +1406,11 @@ msgstr "klein"
 #. A closed track folder.
 msgid "closed"
 msgstr "eingeklappt"
+
+#. An automation mode.
+msgctxt "automation mode"
+msgid "none"
+msgstr ""
 
 #. An automation mode.
 msgid "trim/read"
@@ -1506,6 +1554,11 @@ msgstr "Nicht leiten wenn folgend"
 msgid "VCA pre-FX follow"
 msgstr "VCA folgend vor FX"
 
+#. The decimal point symbol.
+msgctxt "decimal"
+msgid "."
+msgstr ""
+
 msgid "grid whole"
 msgstr "Grid: ganzer Takt"
 
@@ -1545,7 +1598,44 @@ msgstr "Grid: Hundertachtundzwanzigstel"
 msgid "grid  unknown"
 msgstr ""
 
-msgid "frozen"
+#. Used when referring to a folder track in a movement message.
+#. {track} will be replaced with the name, number or both of the folder track.
+#. {folderType} will be replaced with "folder" or "nested folder".
+msgid "{track} {folderType}"
+msgstr ""
+
+#. Used to report the folder containing a track after it has moved.
+#. {folder} will be replaced with the name, number or both of the folder.
+#. {folderType} will be replaced with "folder" or "nested folder".
+msgid "inside {folder} {folderType}"
+msgstr ""
+
+#. Reported when moving a track upward.
+#. {track} will be replaced with a track reference; e.g. "vocal",
+#. "3", "3 vocal", "drums folder" or "3 drums nested folder".
+msgid "above {track}"
+msgstr ""
+
+#. Reported when moving a track downward.
+#. {track} will be replaced with a track reference; e.g. "vocal",
+#. "3", "3 vocal", "drums folder" or "3 drums nested folder".
+msgid "below {track}"
+msgstr ""
+
+#. Reported when moving a track upward inside a folder.
+#. {folder} will be replaced with a folder reference; e.g.
+#. "drums folder" or "3 drums nested folder".
+#. {track} will be replaced with the name, number or both of the nearby track.
+#. e.g. "inside drums folder, below snare" or "inside 3 drums nested folder, below 5"
+msgid "{folder}, below {track}"
+msgstr ""
+
+#. Reported when moving a track downward inside a folder.
+#. {folder} will be replaced with a folder reference; e.g.
+#. "drums folder" or "3 drums nested folder".
+#. {track} will be replaced with the name, number or both of the nearby track.
+#. e.g. "inside drums folder, above snare" or "inside 3 drums nested folder, above 5"
+msgid "{folder}, above {track}"
 msgstr ""
 
 msgid "defeating solo"
@@ -1556,6 +1646,9 @@ msgstr "Phase invertiert"
 
 msgid "FX bypassed"
 msgstr "FX bypassed"
+
+msgid "frozen"
+msgstr ""
 
 #. Reported when navigating to a track which is grouped.
 msgid "grouped"
@@ -1568,9 +1661,6 @@ msgstr "Notizen"
 #. Reported when navigating tracks to indicate how many items
 #. the track has. {} will be replaced by the number of items; e.g.
 #. "2 items".
-#. Reported when items are added. Other things might be added
-#. at the same time (e.g. tracks), so other messages may surround this.
-#. {} will be replaced with the number of items; e.g. "2 items".
 msgid "{} item"
 msgid_plural "{} items"
 msgstr[0] "{} Item"
@@ -1632,6 +1722,20 @@ msgid_plural "{} tracks unsoloed"
 msgstr[0] ""
 msgstr[1] ""
 
+#. Reported when multiple tracks are armed. {} will be replaced
+#. with the number of tracks; e.g. "2 tracks armed".
+msgid "{} track armed"
+msgid_plural "{} tracks armed"
+msgstr[0] ""
+msgstr[1] ""
+
+#. Reported when multiple tracks are unarmed. {} will be
+#. replaced with the number of tracks; e.g. "2 tracks unarmed".
+msgid "{} track unarmed"
+msgid_plural "{} tracks unarmed"
+msgstr[0] ""
+msgstr[1] ""
+
 msgid "record monitor off"
 msgstr "Aufnahme Monitor deaktiviert"
 
@@ -1675,6 +1779,24 @@ msgstr "Delta Solo aktiviert"
 
 msgid "disabled delta solo"
 msgstr "Delta Solo deaktiviert"
+
+#. Used when the start offset for looped or one-shot segment is exactly 0. The audible segment starts from the edit cursor position.
+msgid "start from cursor"
+msgstr ""
+
+#. Used when the start offset is anything other than 0, could be a positive or negative number measured in milliseconds.
+#. {} will be replaced with a number of milliseconds. E.g., "start offset -100 MS".
+msgid "start offset {} MS"
+msgstr ""
+
+#. Used when the end offset for looped or one-shot segment is exactly 0. The audible segment ends at the edit cursor position.
+msgid "end at cursor"
+msgstr ""
+
+#. Used when the end offset is anything other than 0, could be a positive or negative number measured in milliseconds.
+#. {} will be replaced with a number of milliseconds. E.g., "end offset 100 MS".
+msgid "end offset {} MS"
+msgstr ""
 
 msgid "no selected items"
 msgstr "Keine Items ausgewählt"
@@ -1748,6 +1870,7 @@ msgstr "Loop Ende"
 msgid "Track"
 msgstr "Track"
 
+#. An entry in OSARA's context menu for analyzing loudness statistics.
 msgid "Master"
 msgstr "Master"
 
@@ -1775,15 +1898,15 @@ msgstr[1] ""
 msgid "center"
 msgstr "Mitte"
 
-#. Panned to the left. {:g} will be replaced with the amount;
+#. Panned to the left. {} will be replaced with the amount;
 #. e.g. "20% left".
-msgid "{:g}% left"
-msgstr "{:g}% links"
+msgid "{}% left"
+msgstr ""
 
-#. Panned to the right. {:g} will be replaced with the amount;
+#. Panned to the right. {} will be replaced with the amount;
 #. e.g. "20% right".
-msgid "{:g}% right"
-msgstr "{:g}% rechts"
+msgid "{}% right"
+msgstr ""
 
 msgid "ripple per-track"
 msgstr "Rippeln pro Track"
@@ -2165,15 +2288,15 @@ msgstr[1] "{} Tracks selektiert"
 msgid "not defeating solo"
 msgstr "Solo nicht gekoppelt"
 
-#. report transient sensitivity. {:g} is replaced with the sensitivity percentage;
+#. report transient sensitivity. {} is replaced with the sensitivity percentage;
 #. E.g. "13% sensitivity"
-msgid "{:g}% sensitivity"
-msgstr "{:g}% Empfindlichkeit"
+msgid "{}% sensitivity"
+msgstr ""
 
 #. Reported when changing the transient detection threshold.
-#. {:g} will be replaced with the threshold; e.g. "{} dB threshold".
-msgid "{:g} dB threshold"
-msgstr "{:g} dB Grenzwert"
+#. {} will be replaced with the threshold; e.g. "{} dB threshold".
+msgid "{} dB threshold"
+msgstr ""
 
 msgid "enabled envelope points move with media items"
 msgstr "Automationspunkte mit Media Items bewegen aktiviert"
@@ -2218,9 +2341,24 @@ msgstr ""
 
 #. Used when reporting the vertical zoom level as a number.
 #. {} will be replaced with the number; e.g. "35 vertical zoom".
-#. Reported when using "Main action section: Momentarily set
-#. override to alt-1", etc. {} is replaced with the shortened section name;
-#. e.g. "alt-1 momentary".
+msgid "{} vertical zoom"
+msgstr ""
+
+msgid "recording key map"
+msgstr ""
+
+msgid "main key map"
+msgstr ""
+
+msgid "default momentary"
+msgstr ""
+
+msgid "recording key map momentary"
+msgstr ""
+
+#. Reported when using "Main action section: Momentarily
+#. set override to alt-1", etc. {} is replaced with the shortened
+#. section name; e.g. "alt-1 momentary".
 msgid "{} momentary"
 msgstr ""
 
@@ -2268,9 +2406,6 @@ msgstr "Alle Tracks Aufnahmebereitschaft aus"
 
 msgid "all delta solos reset"
 msgstr "Alle Solo geschalteten Deltas zurückgesetzt"
-
-msgid "inverted segment scrub offsets"
-msgstr ""
 
 msgid "grid sixty forth"
 msgstr "Grid: Vierundsechzigstel"
@@ -2383,21 +2518,6 @@ msgstr ""
 msgid "disabled snap"
 msgstr ""
 
-msgid "main key map"
-msgstr ""
-
-msgid "default key map"
-msgstr ""
-
-msgid "recording key map"
-msgstr ""
-
-msgid "default momentary"
-msgstr ""
-
-msgid "recording key map momentary"
-msgstr ""
-
 msgid "auto playing"
 msgstr ""
 
@@ -2502,6 +2622,15 @@ msgstr "Gruppe {}"
 msgid "{} takes"
 msgstr "{} Takes"
 
+msgid "{}"
+msgstr ""
+
+msgid "+{}"
+msgstr ""
+
+msgid "-{}"
+msgstr ""
+
 msgid "{} per keypress"
 msgstr ""
 
@@ -2515,24 +2644,29 @@ msgstr "Rückgängig: {}"
 msgid "redo {}"
 msgstr "Wiederherstellen: {}"
 
+#. Reported when there is not an item under the edit cursor to be split.
+msgid "no item at cursor"
+msgstr ""
+
+#. Reported when an item cannot be split because the cursor is already on its edge.
+msgid "already split at cursor"
+msgstr ""
+
 #. Reported when items are added. {} will be replaced with the
 #. number of items; e.g. "2 items added".
+#. Reported when items are added. {} will be replaced with
+#. the number of items; e.g. "2 items added".
 msgid "{} item added"
 msgid_plural "{} items added"
 msgstr[0] "{} Item hinzugefügt"
 msgstr[1] "{} Items hinzugefügt"
 
-#. Reported when tracks are added. Other things might be added
-#. at the same time (e.g. items), so other messages may surround this.
-#. {} will be replaced with the number of tracks; e.g. "2 tracks".
-msgid "{} track"
-msgid_plural "{} tracks"
-msgstr[0] "{} Track"
-msgstr[1] "{} Tracks"
-
-#. Reported after the number of tracks and/or items added.
-msgid "added"
-msgstr "hinzugefügt"
+#. Reported when tracks are added. {} will be replaced with
+#. the number of tracks; e.g. "2 tracks added".
+msgid "{} track added"
+msgid_plural "{} tracks added"
+msgstr[0] ""
+msgstr[1] ""
 
 #. Reported when envelope points are added. {} will be replaced
 #. with the number of points; e.g. "2 points added".
@@ -2622,6 +2756,12 @@ msgstr[1] ""
 msgid "contents of time selection removed"
 msgstr "Inhalt der Time Selektion entfernt"
 
+msgid "start"
+msgstr ""
+
+msgid "end"
+msgstr ""
+
 #. used when reporting a named marker has been moved. {} will be
 #. replaced with the name of the marker; e.g. "v2 marker moved"
 msgid "{} marker moved"
@@ -2655,6 +2795,9 @@ msgstr "Loop und Time Selektion entfernt"
 msgid "unselected tracks/items/envelope points"
 msgstr "Alle Tracks, Items und Automationspunkte deselektiert"
 
+msgid "OSARA: Select items under edit cursor on selected tracks"
+msgstr ""
+
 #. Reported when switching to a project tab containing an
 #. unsaved project.
 msgid "[Unsaved]"
@@ -2665,6 +2808,12 @@ msgstr "[Unsaved]"
 #. in the range. For example: "1 drums through 5 piano"
 msgid "{start} through {end}"
 msgstr "{start} bis {end}"
+
+#. Used when reporting all tracks which are muted, soloed, etc.
+#. to indicate that no tracks are muted, soloed, etc.
+msgctxt "tracks state"
+msgid "none"
+msgstr ""
 
 msgid "Muted"
 msgstr "Stummgeschaltet"
@@ -2702,16 +2851,28 @@ msgstr "Ende: {}"
 msgid "length {}"
 msgstr "Länge: {}"
 
+msgctxt "time selection"
+msgid "none"
+msgstr ""
+
 msgid "Selected tracks:"
 msgstr ""
 
 msgid "Selected items:"
 msgstr ""
 
+msgctxt "item selection"
+msgid "none"
+msgstr ""
+
 #. Placed before the information about the selection that has
 #. been made in the MIDI Editor when pressing OSARA's report selection
 #. action twice.
 msgid "MIDI Editor selection:"
+msgstr ""
+
+msgctxt "MIDI Editor selection"
+msgid "none"
 msgstr ""
 
 msgid "no MIDI selection"
@@ -2911,22 +3072,85 @@ msgstr ""
 msgid "unmonitored all tracks"
 msgstr ""
 
-#. Used when the start offset for looped or one-shot segment is exactly 0. The audible segment starts from the edit cursor position.
-msgid "start from cursor"
+#. {} will be replaced with the number of items; e.g.
+#. "2 items fit to time selection".
+msgid "{} item fit to time selection"
+msgid_plural "{} items fit to time selection"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "showed video window"
 msgstr ""
 
-#. Used when the start offset is anything other than 0, will be a negative number measured in milliseconds.
-#. {} will be replaced with a number of milliseconds. E.g., "start offset -100 MS".
-msgid "start offset {} MS"
+msgid "hid video window"
 msgstr ""
 
-#. Used when the end offset for looped or one-shot segment is exactly 0. The audible segment ends at the edit cursor position.
-msgid "end at cursor"
+msgid "master track cannot be moved"
 msgstr ""
 
-#. Used when the end offset is anything other than 0, will be a positive number measured in milliseconds.
-#. {} will be replaced with a number of milliseconds. E.g., "end offset 100 MS".
-msgid "end offset {} MS"
+#. Reported when trying to move a track up when it is
+#. already at the top of the track list.
+msgid "top of track list"
+msgstr ""
+
+#. Reported when trying to move a track down when it is
+#. already at the bottom of the track list.
+msgid "bottom of track list"
+msgstr ""
+
+#. Reported when moving a track to the top of the track list.
+#. {track} will be replaced with a track reference; e.g. "vocal",
+#. "3", "3 vocal", "drums folder" or "3 drums nested folder".
+#. For example: "top of track list, above 3 drums nested folder".
+msgid "top of track list, above {track}"
+msgstr ""
+
+#. Reported when moving a track to the bottom of the track list.
+#. {track} will be replaced with a track reference; e.g. "vocal",
+#. "3", "3 vocal", "drums folder" or "3 drums nested folder".
+#. For example: "bottom of track list, below 3 drums nested folder".
+msgid "bottom of track list, below {track}"
+msgstr ""
+
+#. An entry in OSARA's context menu for analyzing loudness statistics.
+msgid "Master mix"
+msgstr ""
+
+#. An entry in OSARA's context menu for analyzing loudness statistics.
+#. An entry in OSARA's context menu for analyzing loudness statistics.
+msgid "Time &selection"
+msgstr ""
+
+#. An entry in OSARA's context menu for analyzing loudness statistics.
+msgid "Tracks"
+msgstr ""
+
+#. An entry in OSARA's context menu for analyzing loudness statistics.
+msgid "Selected &tracks"
+msgstr ""
+
+#. An entry in OSARA's context menu for analyzing loudness statistics.
+msgid "&Mono summed selected tracks"
+msgstr ""
+
+#. An entry in OSARA's context menu for analyzing loudness statistics.
+msgid "Mono summed time selection"
+msgstr ""
+
+#. An entry in OSARA's context menu for analyzing loudness statistics.
+msgid "Items"
+msgstr ""
+
+#. An entry in OSARA's context menu for analyzing loudness statistics.
+msgid "Selected &items"
+msgstr ""
+
+#. An entry in OSARA's context menu for analyzing loudness statistics.
+msgid "Include track/take &FX and settings"
+msgstr ""
+
+#. An entry in OSARA's context menu for analyzing loudness statistics.
+msgid "Dry run project using the most recent render settings"
 msgstr ""
 
 msgid "OSARA: Move to next item (leaving other items selected)"
@@ -2947,8 +3171,8 @@ msgstr "Osara: zeige FX Parameter des aktuellen Tracks / Takes (abhängig vom Fo
 msgid "OSARA: View FX parameters for master track"
 msgstr "Osara: zeige FX Parameter des Master Tracks"
 
-msgid "OSARA: Configure Peak Watcher for current track/track FX (depending on focus)"
-msgstr "OSARA: Konfiguriere Peak Watcher für den aktuellen Track / Track-FX (abhängig vom Fokus)"
+msgid "OSARA: Configure Peak Watcher for current track/FX (depending on focus)"
+msgstr ""
 
 msgid "OSARA: Report Peak Watcher value for first watcher first channel"
 msgstr "OSARA: Peak Watcher Wert für den ersten Kanal des ersten Watcher ansagen"
@@ -3139,9 +3363,6 @@ msgstr ""
 msgid "OSARA: Open online documentation"
 msgstr ""
 
-msgid "OSARA: Select items under edit cursor on selected tracks"
-msgstr ""
-
 msgid "OSARA: Report tempo and time signature at play cursor; press twice to add/edit tempo markers"
 msgstr ""
 
@@ -3152,6 +3373,9 @@ msgid "OSARA: Scrub faster, nudge and adjust item edges in larger increments, zo
 msgstr ""
 
 msgid "OSARA: Scrub slower, nudge and adjust item edges in smaller increments, zoom in"
+msgstr ""
+
+msgid "OSARA: Analyze and show peak and loudness statistics for selected tracks/items"
 msgstr ""
 
 msgid "OSARA: Enable noncontiguous selection/toggle selection of current chord/note"
@@ -3245,7 +3469,11 @@ msgid "&Filter:"
 msgstr "&Filter:"
 
 msgctxt "Parameters"
-msgid "Include &unnamed parameters"
+msgid "Include &unnamed and potentially unusable parameters"
+msgstr ""
+
+msgctxt "Parameters"
+msgid "&Try setting value to detect steps"
 msgstr ""
 
 msgctxt "Parameters"
@@ -3321,16 +3549,20 @@ msgid "FX Preset"
 msgstr "FX Preset"
 
 msgctxt "FX Preset"
-msgid "Filter:"
-msgstr "Filter:"
+msgid "&Presets:"
+msgstr ""
 
 msgctxt "FX Preset"
-msgid "&OK"
-msgstr "&OK"
+msgid "&Filter:"
+msgstr ""
 
 msgctxt "FX Preset"
-msgid "&Cancel"
-msgstr "Abbre&chen"
+msgid "&Apply"
+msgstr ""
+
+msgctxt "FX Preset"
+msgid "&Close"
+msgstr ""
 
 msgctxt "OSARA Update"
 msgid "Go to &download page"
@@ -3381,12 +3613,16 @@ msgid "Report time se&lection start and end while playing"
 msgstr ""
 
 msgctxt "OSARA Configuration"
-msgid "Report &transport state (play, record, etc.)"
-msgstr "&Transport Status (Wiedergabe, Aufnahme, etc.) ansagen"
+msgid "Report &transport play, pause and stop"
+msgstr ""
 
 msgctxt "OSARA Configuration"
-msgid "&Report track numbers"
-msgstr "&Track Nummern ansagen"
+msgid "Report &recording state"
+msgstr ""
+
+msgctxt "OSARA Configuration"
+msgid "Report tr&ack numbers"
+msgstr ""
 
 msgctxt "OSARA Configuration"
 msgid "Report &FX when moving to tracks/takes"
@@ -3403,6 +3639,10 @@ msgstr "Midi &Noten im Midi Editor ansagen"
 msgctxt "OSARA Configuration"
 msgid "Report changes made via &control surfaces"
 msgstr "Über Kontroller (&Control Surfaces) gemachte Änderungen ansagen"
+
+msgctxt "OSARA Configuration"
+msgid "Move cursor relative to adjusting &edges of items and time selection"
+msgstr ""
 
 msgctxt "OSARA Configuration"
 msgid "OK"

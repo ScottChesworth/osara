@@ -56,9 +56,8 @@ struct FreeReaperPtr {
 	}
 };
 
-// return the midi editor zoom ratio of the take
-double getMidiZoomRatio(MediaItem_Take* take) {
-	static const regex re("CFGEDITVIEW -?[0-9.]+ ([0-9.]+) ");
+double getMidiZoomRatio(MediaItem_Take* take, bool vertical=false) {
+	static const regex re("CFGEDITVIEW -?[0-9.]+ ([0-9.]+) -?[0-9.]+ ([0-9.]+) ");
 	char guid[40]; 
 	GetSetMediaItemTakeInfo_String(take, "GUID", guid, false);
 	MediaItem* item = GetMediaItemTake_Item(take);
@@ -75,7 +74,7 @@ double getMidiZoomRatio(MediaItem_Take* take) {
 	if (!regex_search(stateSV.cbegin() + takePos, stateSV.cend(), match, re)) {
 		return -1;
 	}
-	return stod(match.str(1));
+	return stod(match.str(vertical ? 2 : 1));
 }
 
 // Note: while the below struct is called MidiControlChange in line with naming in Reaper,
@@ -256,7 +255,7 @@ struct MidiEventListData {
 
 	static const MidiEventListData get(HWND editor, int index, ReqParams params={}) {
 		MidiEventListData data{index};
-		auto setting = format("list_{}", index);
+		auto setting = fmt::format("list_{}", index);
 		char eventData[255] = "\0";
 		if (MIDIEditor_GetSetting_str(editor, setting.c_str(), eventData, sizeof(eventData))) {
 			MediaItem_Take* take = MIDIEditor_GetTake (editor);
@@ -575,7 +574,7 @@ class MidiEventIterator {
 
 using MidiNoteIterator = MidiEventIterator<MidiNote, MediaItem_Take*>;
 
-const string getMidiNoteName(MediaTrack* track, int pitch, int channel) {
+const string getMidiNoteName(int pitch) {
 	static const char* names[] = {
 		// Translators: The name of a musical note.
 		translate("c"),
@@ -602,22 +601,25 @@ const string getMidiNoteName(MediaTrack* track, int pitch, int channel) {
 		// Translators: The name of a musical note.
 		translate("b")
 	};
+	ostringstream s;
+	int octave = pitch / 12 - 1;
+	int szOut = 0;
+	int* octaveOffset = (int*)get_config_var("midioctoffs", &szOut);
+	if (octaveOffset && (szOut == sizeof(int))) {
+		octave += *octaveOffset - 1; // REAPER offset "0" is saved as "1" in the preferences file.
+	}
+	pitch %= 12;
+	s << names[pitch] << " " << octave;
+	return s.str();
+}
+
+const string getMidiNoteName(MediaTrack* track, int pitch, int channel) {
 	int tracknumber = static_cast<int> (GetMediaTrackInfo_Value(track, "IP_TRACKNUMBER")); // one based
 	const char* noteName = GetTrackMIDINoteName(tracknumber - 1, pitch, channel); // track number is zero based
-	ostringstream s;
-	if (noteName &&  GetToggleCommandState2(SectionFromUniqueID(MIDI_EDITOR_SECTION), 40045)) { // View: Show note names
-		s << noteName;
-	} else {
-		int octave = pitch / 12 - 1;
-		int szOut = 0;
-		int* octaveOffset = (int*)get_config_var("midioctoffs", &szOut);
-		if (octaveOffset && (szOut == sizeof(int))) {
-			octave += *octaveOffset - 1; // REAPER offset "0" is saved as "1" in the preferences file.
-		}
-		pitch %= 12;
-		s << names[pitch] << " " << octave;
+	if (noteName && GetToggleCommandState2(SectionFromUniqueID(MIDI_EDITOR_SECTION), 40045)) { // View: Show note names
+		return noteName;
 	}
-	return s.str();
+	return getMidiNoteName(pitch);
 }
 
 const string getMidiNoteName(MediaItem_Take *take, int pitch, int channel) {
@@ -718,9 +720,9 @@ MidiNote findNoteInChord(MediaItem_Take* take, int direction) {
 	return notes[curNoteInChord];
 }
 
-void cmdMidiMoveCursor(Command* command) {
+void cmdMidiMoveCursor(int command) {
 	HWND editor = MIDIEditor_GetActive();
-	MIDIEditor_OnCommand(editor, command->gaccel.accel.cmd);
+	MIDIEditor_OnCommand(editor, command);
 	ostringstream s;
 	s << formatCursorPosition();
 	MediaItem_Take* take = MIDIEditor_GetTake(editor);
@@ -998,17 +1000,20 @@ vector<MidiControlChange> getSelectedCCs(MediaItem_Take* take, int offset=-1) {
 		if (ccIndex == -1) {
 			break;
 		}
-		bool muted;
-		double position;
-		int chan, msg1, msg2, msg3;
-		MIDI_GetCC(take, ccIndex, nullptr, &muted, &position, &msg1, &chan, &msg2, &msg3);
-		position = MIDI_GetProjTimeFromPPQPos(take, position);
-		ccs.push_back({chan, ccIndex, msg1, msg2, msg3, position, true, muted});
+		ccs.push_back(MidiControlChange::get(take, ccIndex, {
+			true,  // position
+			true,  // message1
+			true,  // channel
+			true,  // message2
+			true,  // message3,
+			true,  // selected
+			true  // muted
+		}));
 	}
 	return ccs;
 }
 
-void cmdMidiToggleSelection(Command* command) {
+void cmdMidiToggleSelection(int command) {
 	if (isSelectionContiguous) {
 		isSelectionContiguous = false;
 		outputMessage(translate("noncontiguous selection"));
@@ -1133,19 +1138,19 @@ void moveToChord(int direction, bool clearSelection=true, bool select=true) {
 //	}
 }
 
-void cmdMidiMoveToNextChord(Command* command) {
+void cmdMidiMoveToNextChord(int command) {
 	moveToChord(1);
 }
 
-void cmdMidiMoveToPreviousChord(Command* command) {
+void cmdMidiMoveToPreviousChord(int command) {
 	moveToChord(-1);
 }
 
-void cmdMidiMoveToNextChordKeepSel(Command* command) {
+void cmdMidiMoveToNextChordKeepSel(int command) {
 	moveToChord(1, false, isSelectionContiguous);
 }
 
-void cmdMidiMoveToPreviousChordKeepSel(Command* command) {
+void cmdMidiMoveToPreviousChordKeepSel(int command) {
 	moveToChord(-1, false, isSelectionContiguous);
 }
 
@@ -1187,19 +1192,19 @@ void moveToNoteInChord(int direction, bool clearSelection=true, bool select=true
 	outputMessage(s);
 }
 
-void cmdMidiMoveToHigherNoteInChord(Command* command) {
+void cmdMidiMoveToHigherNoteInChord(int command) {
 	moveToNoteInChord(1);
 }
 
-void cmdMidiMoveToLowerNoteInChord(Command* command) {
+void cmdMidiMoveToLowerNoteInChord(int command) {
 	moveToNoteInChord(-1);
 }
 
-void cmdMidiMoveToHigherNoteInChordKeepSel(Command* command) {
+void cmdMidiMoveToHigherNoteInChordKeepSel(int command) {
 	moveToNoteInChord(1, false, isSelectionContiguous);
 }
 
-void cmdMidiMoveToLowerNoteInChordKeepSel(Command* command) {
+void cmdMidiMoveToLowerNoteInChordKeepSel(int command) {
 	moveToNoteInChord(-1, false, isSelectionContiguous);
 }
 
@@ -1260,23 +1265,23 @@ void cmdhInsertNote(int oldCount, int relativeNote, bool reportNewPos) {
 	outputMessage(s);
 }
 
-void cmdMidiInsertNote(Command* command) {
+void cmdMidiInsertNote(int command) {
 	HWND editor = MIDIEditor_GetActive();
 	MediaItem_Take* take = MIDIEditor_GetTake(editor);
 	int oldCount;
 	MIDI_CountEvts(take, &oldCount, nullptr, nullptr);
-	MIDIEditor_OnCommand(editor, command->gaccel.accel.cmd);
+	MIDIEditor_OnCommand(editor, command);
 	// If we're advancing the cursor position, we should report the new position.
-	const bool reportNewPos = command->gaccel.accel.cmd ==
+	const bool reportNewPos = command ==
 		40051; // Edit: Insert note at edit cursor
 	cmdhInsertNote(oldCount, 0, reportNewPos);
 }
 
-void cmdMidiPasteEvents(Command* command) {
+void cmdMidiPasteEvents(int command) {
 	HWND editor = MIDIEditor_GetActive();
 	MediaItem_Take* take = MIDIEditor_GetTake(editor);
 	int oldCount = MIDI_CountEvts(take, nullptr, nullptr, nullptr);
-	MIDIEditor_OnCommand(editor, command->gaccel.accel.cmd);
+	MIDIEditor_OnCommand(editor, command);
 	int newCount = MIDI_CountEvts(take, nullptr, nullptr, nullptr);
 	int added = newCount - oldCount;
 if (added <= 0) {
@@ -1289,11 +1294,11 @@ if (added <= 0) {
 		translate_plural("{} event added", "{} events added", added), added));
 }
 
-void cmdMidiDeleteEvents(Command* command) {
+void cmdMidiDeleteEvents(int command) {
 	HWND editor = MIDIEditor_GetActive();
 	MediaItem_Take* take = MIDIEditor_GetTake(editor);
 	int oldCount = MIDI_CountEvts(take, nullptr, nullptr, nullptr);
-	MIDIEditor_OnCommand(editor, command->gaccel.accel.cmd);
+	MIDIEditor_OnCommand(editor, command);
 	int removed = oldCount - MIDI_CountEvts(take, nullptr, nullptr, nullptr);
 	// Translators: Used when events are deleted in the MIDI editor. {} is
 	// replaced by the number of events. E.g. "3 events removed"
@@ -1382,11 +1387,11 @@ void postMidiSelectEvents(int command) {
 		count));
 }
 
-void cmdMidiToggleSelCC (Command* command) {
+void cmdMidiToggleSelCC (int command) {
 	HWND editor = MIDIEditor_GetActive();
 	MediaItem_Take* take = MIDIEditor_GetTake(editor);
 	int oldCount = countSelectedEvents (take);
-	MIDIEditor_OnCommand(editor, command->gaccel.accel.cmd);
+	MIDIEditor_OnCommand(editor, command);
 	int newCount = countSelectedEvents (take);
 	int count = newCount - oldCount;
 	if (count >= 0) {
@@ -1555,11 +1560,11 @@ void moveToCC(int direction, bool clearSelection=true, bool select=true) {
 	outputMessage(s);
 }
 
-void cmdMidiInsertCC(Command* command) {
+void cmdMidiInsertCC(int command) {
 	HWND editor = MIDIEditor_GetActive();
 	MediaItem_Take* take = MIDIEditor_GetTake(editor);
 	int oldCount = MIDI_CountEvts(take, nullptr, nullptr, nullptr);
-	MIDIEditor_OnCommand(editor, command->gaccel.accel.cmd);
+	MIDIEditor_OnCommand(editor, command);
 	int newCount = MIDI_CountEvts(take, nullptr, nullptr, nullptr);
 	if (newCount <= oldCount) {
 		return; // Not inserted.
@@ -1573,19 +1578,19 @@ void cmdMidiInsertCC(Command* command) {
 	outputMessage(describeCC(take, cc));
 }
 
-void cmdMidiMoveToNextCC(Command* command) {
+void cmdMidiMoveToNextCC(int command) {
 	moveToCC(1);
 }
 
-void cmdMidiMoveToPreviousCC(Command* command) {
+void cmdMidiMoveToPreviousCC(int command) {
 	moveToCC(-1);
 }
 
-void cmdMidiMoveToNextCCKeepSel(Command* command) {
+void cmdMidiMoveToNextCCKeepSel(int command) {
 	moveToCC(1, false, isSelectionContiguous);
 }
 
-void cmdMidiMoveToPreviousCCKeepSel(Command* command) {
+void cmdMidiMoveToPreviousCCKeepSel(int command) {
 	moveToCC(-1, false, isSelectionContiguous);
 }
 
@@ -1615,21 +1620,21 @@ void midiMoveToItem(int direction) {
 	outputMessage(s);
 }
 
-void cmdMidiMoveToNextItem(Command* command) {
+void cmdMidiMoveToNextItem(int command) {
 	Undo_BeginBlock();
 	midiMoveToItem(1);
 	Undo_EndBlock(translate("OSARA: Move to next midi item on track"), 0);
 }
 
-void cmdMidiMoveToPrevItem(Command* command) {
+void cmdMidiMoveToPrevItem(int command) {
 	Undo_BeginBlock();
 	midiMoveToItem(-1);
 	Undo_EndBlock(translate("OSARA: Move to previous midi item on track"), 0);
 }
 
-void cmdMidiMoveToTrack(Command* command) {
+void cmdMidiMoveToTrack(int command) {
 	HWND editor = MIDIEditor_GetActive();
-	MIDIEditor_OnCommand(editor, command->gaccel.accel.cmd);
+	MIDIEditor_OnCommand(editor, command);
 	MediaItem_Take* take = MIDIEditor_GetTake(editor);
 	MediaItem* item = GetMediaItemTake_Item(take);
 	MediaTrack* track = GetMediaItem_Track(item);
@@ -1658,7 +1663,7 @@ void cmdMidiMoveToTrack(Command* command) {
 	outputMessage(s);
 }
 
-void cmdMidiSelectSamePitchStartingInTimeSelection(Command* command) {
+void cmdMidiSelectSamePitchStartingInTimeSelection(int command) {
 	double tsStart,tsEnd;
 	GetSet_LoopTimeRange(false, false, &tsStart, &tsEnd, false);
 	if(tsStart == tsEnd) {
@@ -1695,12 +1700,12 @@ void cmdMidiSelectSamePitchStartingInTimeSelection(Command* command) {
 		translate_plural("{} note selected", "{} notes selected", selectCount), selectCount ));
 }
 
-void cmdMidiNoteSplitOrJoin(Command* command) {
+void cmdMidiNoteSplitOrJoin(int command) {
 	HWND editor = MIDIEditor_GetActive();
 	MediaItem_Take* take = MIDIEditor_GetTake(editor);
 	// Get selected note count before action.
 	auto oldCount = countSelectedNotes(take);
-	auto cmdId = command->gaccel.accel.cmd;
+	auto cmdId = command;
 	MIDIEditor_OnCommand(editor, cmdId);
 	auto newCount = countSelectedNotes(take);
 	if (oldCount == newCount) {
@@ -1773,7 +1778,7 @@ void focusNearestMidiEvent(HWND hwnd) {
 	}
 }
 
-void cmdFocusNearestMidiEvent(Command* command) {
+void cmdFocusNearestMidiEvent(int command) {
 	HWND hwnd= GetFocus();
 	if (!hwnd) {
 		return;
@@ -1781,9 +1786,9 @@ void cmdFocusNearestMidiEvent(Command* command) {
 	focusNearestMidiEvent(hwnd);
 }
 
-void cmdMidiFilterWindow(Command *command) {
+void cmdMidiFilterWindow(int command) {
 	HWND editor = MIDIEditor_GetActive();
-	MIDIEditor_OnCommand(editor, command->gaccel.accel.cmd);
+	MIDIEditor_OnCommand(editor, command);
 	// TODO: we could also check the command state was "off", to skip searching otherwise
 	HWND filter = FindWindowW(L"#32770",
 		widen(LocalizeString("Filter Events", "midi_DLG_128", 0)).c_str());
@@ -2418,6 +2423,20 @@ void postMidiChangeZoom(int command) {
 		// replaced with the number of pixels per second; e.g. 100 pixels/second.
 		outputMessage(format(translate("{} pixels/second"), formatDouble(zoom, 1)));
 	}
+}
+
+void postMidiChangeVerticalZoom(int command) {
+	MediaItem_Take* take = MIDIEditor_GetTake(MIDIEditor_GetActive());
+	if(!take) {
+		return;
+	}
+	double zoom = getMidiZoomRatio(take, true);
+	if (zoom <0) {
+		return;
+	}
+	// Translators: Reported when zooming in or out vertically in the MIDI editor. {} will be
+	// replaced with the number of pixels per semitone; e.g. 12 pixels/semitone.
+	outputMessage(format(translate("{} pixels/semitone"), formatDouble(zoom, 1)));
 }
 
 // F1-f12 step input doesn't use actions, so we need to hook the key presses.

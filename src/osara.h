@@ -18,9 +18,15 @@
 # pragma clang diagnostic pop
 #endif
 #include <functional>
+#include <fstream>
 #include <memory>
 #include <string>
 #include <sstream>
+#include <utility>
+#ifndef FMT_HEADER_ONLY
+#define FMT_HEADER_ONLY
+#endif
+#include <fmt/format.h>
 
 #define REAPERAPI_MINIMAL
 #define REAPERAPI_WANT_GetLastTouchedTrack
@@ -198,6 +204,7 @@
 #define REAPERAPI_WANT_TrackFX_Delete
 #define REAPERAPI_WANT_GetSetTrackGroupMembership
 #define REAPERAPI_WANT_GetSetTrackGroupMembershipHigh
+#define REAPERAPI_WANT_GetSetProjectInfo
 #define REAPERAPI_WANT_GetSetProjectInfo_String
 #define REAPERAPI_WANT_SetOnlyTrackSelected
 #define REAPERAPI_WANT_MIDI_GetEvt
@@ -225,7 +232,7 @@
 #define REAPERAPI_WANT_parse_timestr_len
 #define REAPERAPI_WANT_TimeMap_GetTimeSigAtTime
 #define REAPERAPI_WANT_GetSetProjectGrid
-
+#define REAPERAPI_WANT_GetTrackMIDINoteNameEx
 #include <reaper/reaper_plugin.h>
 #include <reaper/reaper_plugin_functions.h>
 
@@ -243,7 +250,7 @@ typedef struct Command {
 	int section;
 	gaccel_register_t gaccel;
 	const char* id;
-	void (*execute)(Command*);
+	void (*execute)(int);
 } Command;
 extern int lastCommandRepeatCount;
 extern DWORD lastCommandTime;
@@ -340,11 +347,18 @@ std::string formatLength(double start, double end, TimeFormat format=TF_RULER,
 std::string formatNoteLength(double start, double end);
 std::string formatCursorPosition(TimeFormat format=TF_RULER,
 	FormatTimeCacheRequest cache=FT_CACHE_DEFAULT);
+std::string formatTrackNameOrNumber(MediaTrack* track);
 const char* getActionName(int command, KbdSectionInfo* section=nullptr, bool skipCategory=true);
 
 bool isTrackSelected(MediaTrack* track);
 bool isTrackArmed(MediaTrack* track);
-std::string formatDouble(double d, int precision, bool plus=false);
+
+// Format a double d to precision decimal places.
+// If plus is true, a "+" prefix will be included for a positive number.
+// If stripZeros is true, trailing zeroes will be removed.
+std::string formatDouble(double d, int precision, bool plus=false,
+	bool stripZeros=true);
+
 MediaItem* getItemWithFocus();
 
 #ifdef _WIN32
@@ -368,7 +382,7 @@ extern CComPtr<IAccPropServices> accPropServices;
 bool isClassName(HWND hwnd, std::string className);
 
 extern bool isHandlingCommand;
-void reportTransportState(int state);
+void reportTransportState(int before, int after);
 void reportRepeat(bool repeat);
 void postGoToTrack(int command, MediaTrack* track);
 void formatPan(double pan, std::ostringstream& output);
@@ -378,5 +392,30 @@ IReaperControlSurface* createSurface();
 extern bool selectedEnvelopeIsTake;
 // exports.cpp
 void registerExports(reaper_plugin_info_t* rec);
+
+template<typename... Args>
+inline void dbg(fmt::format_string<Args...> format, Args&&... args) {
+	static const bool loggingEnabled = GetExtState("osara", "logging")[0] == '1';
+	if (!loggingEnabled) {
+		return;
+	}
+	static const std::string logFilePath = [] {
+		char tempPath[1024] = {};
+#ifdef _WIN32
+		// On Windows, ofstream will interpret a narrow string as ANSI, so use
+		// GetTempPathA.
+		GetTempPathA(sizeof(tempPath), tempPath);
+#else
+		GetTempPath(sizeof(tempPath), tempPath);
+#endif
+		std::string result(tempPath);
+		if (!result.empty() && result.back() != '/' && result.back() != '\\') {
+			result += '/';
+		}
+		return result + "osara.log";
+	}();
+	std::ofstream(logFilePath, std::ios::app)
+		<< fmt::format(format, std::forward<Args>(args)...) << '\n';
+}
 
 #endif
