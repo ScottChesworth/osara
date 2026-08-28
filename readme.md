@@ -726,7 +726,8 @@ When positioned on a chord, actions are also available to move through individua
 
 Use the Left and Right arrow keys to navigate backward and forward through MIDI note data (OSARA: Move backward to previous single note or chord, OSARA: Move forward to next single note or chord).
 When you move to a note or chord, the edit cursor will be placed at that position and REAPER will play the note or chord through a virtual instrument if you have one instantiated on the track.
-OSARA will report either the name of a single note or number of notes in a chord, then the new cursor position.
+By default, OSARA will report the name of a single note or number of notes in a chord, then the new cursor position.
+Reporting of note names and position can both be disabled in OSARA configuration.
 All notes in a chord are automatically selected, so you can manipulate the entire chord.
 For example, pressing Delete will delete the chord.
 

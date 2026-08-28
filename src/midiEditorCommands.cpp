@@ -1133,9 +1133,9 @@ void moveToChord(int direction, bool clearSelection=true, bool select=true) {
 	if (settings::reportPositionMIDI) {
 		s << formatCursorPosition();
 	}
-//	if (s.tellp() > 0) {
+	if (s.tellp() > 0) {
 		outputMessage(s);
-//	}
+	}
 }
 
 void cmdMidiMoveToNextChord(int command) {
